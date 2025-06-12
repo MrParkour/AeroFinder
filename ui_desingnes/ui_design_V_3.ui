@@ -23,30 +23,30 @@
       <x>0</x>
       <y>0</y>
       <width>1121</width>
-      <height>841</height>
+      <height>911</height>
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
       <string>Plane</string>
      </attribute>
-     <widget class="QStackedWidget" name="stackedWidget">
+     <widget class="QStackedWidget" name="stackedWidget_plane">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>240</width>
-        <height>900</height>
+        <width>271</width>
+        <height>681</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(166, 166, 166);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page">
        <widget class="QLabel" name="P_naz">
@@ -90,7 +90,7 @@
          <rect>
           <x>10</x>
           <y>220</y>
-          <width>221</width>
+          <width>251</width>
           <height>103</height>
          </rect>
         </property>
@@ -157,7 +157,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>325</y>
+          <y>330</y>
           <width>201</width>
           <height>21</height>
          </rect>
@@ -168,43 +168,7 @@
          </font>
         </property>
         <property name="text">
-         <string> Год выпуска</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="P_weight">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>400</y>
-          <width>181</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Вес</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="P_size">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>510</y>
-          <width>181</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="font">
-         <font>
-          <pointsize>12</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Размер</string>
+         <string>Год выпуска</string>
         </property>
        </widget>
        <widget class="QWidget" name="formLayoutWidget">
@@ -247,204 +211,12 @@
          </item>
         </layout>
        </widget>
-       <widget class="QWidget" name="gridLayoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>540</y>
-          <width>221</width>
-          <height>140</height>
-         </rect>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_size">
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="P_size_line_long">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="P_sie_lb_high">
-           <property name="text">
-            <string>Высота</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLabel" name="P_size_lb_plosh">
-           <property name="text">
-            <string>Площадь крыльев</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="P_size_lb_razmax">
-           <property name="text">
-            <string>Размах крыльев</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="P_size_lb_long">
-           <property name="text">
-            <string>Длинна</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="P_size_lb_strel">
-           <property name="text">
-            <string>Стреловидность</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="P_size_line_high">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="P_size_line_razmax">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLineEdit" name="P_size_line_plosh">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="1">
-          <widget class="QLineEdit" name="P_size_line_strel">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="2">
-          <widget class="QLabel" name="P_size_lb_high_m">
-           <property name="text">
-            <string>м</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLabel" name="P_size_lb_long_m">
-           <property name="text">
-            <string>м</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QLabel" name="P_size_lb_razmax_m">
-           <property name="text">
-            <string>м</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="2">
-          <widget class="QLabel" name="P_size_lb_plosh_m2">
-           <property name="text">
-            <string>м²</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="2">
-          <widget class="QLabel" name="P_size_lb_strel_gr">
-           <property name="text">
-            <string>°</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="gridLayoutWidget_3">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>430</y>
-          <width>221</width>
-          <height>82</height>
-         </rect>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_weight">
-         <item row="1" column="2">
-          <widget class="QLabel" name="P_wei_lb_norm_kg">
-           <property name="text">
-            <string>кг</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="2">
-          <widget class="QLabel" name="P_wei_lb_sob_kg">
-           <property name="text">
-            <string>кг</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="2">
-          <widget class="QLabel" name="P_wei_lb_max_kg">
-           <property name="text">
-            <string>кг</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="1">
-          <widget class="QLineEdit" name="P_wei_line_sob">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLabel" name="P_wei_lb_norm">
-           <property name="text">
-            <string>Нормальный</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="P_wei_lb_sob">
-           <property name="text">
-            <string>Собственный</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="P_wei_lb_max">
-           <property name="text">
-            <string>Максимальный</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="1">
-          <widget class="QLineEdit" name="P_wei_line_max">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLineEdit" name="P_wei_line_norm">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </widget>
        <widget class="QWidget" name="gridLayoutWidget_10">
         <property name="geometry">
          <rect>
           <x>10</x>
           <y>40</y>
-          <width>232</width>
+          <width>251</width>
           <height>151</height>
          </rect>
         </property>
@@ -521,13 +293,425 @@
          </item>
         </layout>
        </widget>
+       <widget class="QLabel" name="P_weight">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>410</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Вес</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>430</y>
+          <width>251</width>
+          <height>171</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_weight">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="P_wei_lb_sob_kg_2">
+           <property name="text">
+            <string>кг  </string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="P_wei_line_sob_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" colspan="5">
+          <widget class="QLabel" name="P_wei_lb_norm">
+           <property name="text">
+            <string>Нормальный</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="QLineEdit" name="P_wei_line_norm_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="P_wei_line_sob_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="5">
+          <widget class="QLabel" name="P_wei_lb_sob">
+           <property name="text">
+            <string>Собственный</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>до   </string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="QLineEdit" name="P_wei_line_max_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="4">
+          <widget class="QLabel" name="P_wei_lb_sob_kg_4">
+           <property name="text">
+            <string>кг</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="QLineEdit" name="P_wei_line_norm_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="5">
+          <widget class="QLabel" name="P_wei_lb_max">
+           <property name="text">
+            <string>Максимальный</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="2">
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="4">
+          <widget class="QLabel" name="P_wei_lb_max_kg">
+           <property name="text">
+            <string>кг</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="3">
+          <widget class="QLineEdit" name="P_wei_line_max_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
       </widget>
       <widget class="QWidget" name="page_2">
-       <widget class="QLabel" name="label_43">
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>480</y>
+          <width>201</width>
+          <height>111</height>
+         </rect>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>251</width>
+          <height>291</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_size">
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_7">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_9">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="P_size_line_high_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="P_size_line_high_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="P_size_line_long_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_12">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_10">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_11">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="P_size_lb_high_m">
+           <property name="text">
+            <string>м</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="P_size_lb_long_m">
+           <property name="text">
+            <string>м</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="P_size_line_long_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="QLabel" name="label_13">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLabel" name="label_14">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="QLabel" name="label_15">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="2">
+          <widget class="QLabel" name="label_16">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="4">
+          <widget class="QLabel" name="P_size_lb_strel_gr">
+           <property name="text">
+            <string>°</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="4">
+          <widget class="QLabel" name="P_size_lb_plosh_m2">
+           <property name="text">
+            <string>м²</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QLabel" name="P_size_lb_razmax_m">
+           <property name="text">
+            <string>м</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLineEdit" name="P_size_line_rasmax_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="P_size_line_razmax_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="P_size_line_plosh_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="QLineEdit" name="P_size_line_strel_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLineEdit" name="P_size_line_plosh_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="3">
+          <widget class="QLineEdit" name="P_size_line_strel_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="5">
+          <widget class="QLabel" name="P_size_lb_long">
+           <property name="text">
+            <string>Длинна</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="5">
+          <widget class="QLabel" name="P_sie_lb_high">
+           <property name="text">
+            <string>Высота</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="5">
+          <widget class="QLabel" name="P_size_lb_razmax">
+           <property name="text">
+            <string>Размах крыльев</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="5">
+          <widget class="QLabel" name="P_size_lb_plosh">
+           <property name="text">
+            <string>Площадь крыльев</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0" colspan="5">
+          <widget class="QLabel" name="P_size_lb_strel">
+           <property name="text">
+            <string>Стреловидность</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QLabel" name="P_size">
         <property name="geometry">
          <rect>
           <x>10</x>
           <y>10</y>
+          <width>181</width>
+          <height>21</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Размер</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>340</y>
           <width>181</width>
           <height>31</height>
          </rect>
@@ -545,105 +729,192 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>40</y>
-          <width>221</width>
-          <height>203</height>
+          <y>390</y>
+          <width>251</width>
+          <height>221</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_load">
-         <item row="5" column="0">
-          <widget class="QLineEdit" name="P_load_line_pascap">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="1">
-          <widget class="QLabel" name="P_load_lb_pascap_ch">
-           <property name="text">
-            <string>чел.</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="P_load_lb_crew">
-           <property name="text">
-            <string>Экипаж</string>
-           </property>
-          </widget>
-         </item>
-         <item row="6" column="0">
-          <widget class="QLabel" name="P_load_lb_maxlo">
-           <property name="text">
-            <string>Максимаьная нагрузка</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="P_load_lb_comlo">
-           <property name="text">
-            <string>Боевая нагрузка</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="1">
-          <widget class="QLabel" name="P_load_lb_comlo_kg">
-           <property name="text">
-            <string>кг</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLineEdit" name="P_load_line_crew">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="1">
-          <widget class="QLabel" name="P_load_lb_crew_ch">
-           <property name="text">
-            <string>чел.</string>
-           </property>
-          </widget>
-         </item>
-         <item row="3" column="0">
-          <widget class="QLineEdit" name="P_load_line_comlo">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="P_load_lb_pascap">
-           <property name="text">
-            <string>Пасажировместимость</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="0">
-          <widget class="QLineEdit" name="P_load_line_maxlo">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
          <item row="7" column="1">
+          <widget class="QLineEdit" name="P_load_line_maxlo_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="4">
           <widget class="QLabel" name="P_load_lb_maxlo_kg">
            <property name="text">
             <string>кг</string>
            </property>
           </widget>
          </item>
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="P_load_line_pascap_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="4">
+          <widget class="QLabel" name="P_load_lb_pascap_ch">
+           <property name="text">
+            <string>чел.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="P_load_line_crew_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="4">
+          <widget class="QLabel" name="P_load_lb_comlo_kg">
+           <property name="text">
+            <string>кг</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="4">
+          <widget class="QLabel" name="P_load_lb_crew_ch">
+           <property name="text">
+            <string>чел.</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="P_load_line_comlo_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_17">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_18">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="P_load_line_crew_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_19">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_20">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_21">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLabel" name="label_22">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_23">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="QLabel" name="label_24">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="P_load_line_comlo_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLineEdit" name="P_load_line_pascap_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLineEdit" name="lineEdit_12">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="5">
+          <widget class="QLabel" name="P_load_lb_maxlo">
+           <property name="text">
+            <string>Максимаьная нагрузка</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="5">
+          <widget class="QLabel" name="P_load_lb_pascap">
+           <property name="text">
+            <string>Пасажировместимость</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="5">
+          <widget class="QLabel" name="P_load_lb_comlo">
+           <property name="text">
+            <string>Боевая нагрузка</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="5">
+          <widget class="QLabel" name="P_load_lb_crew">
+           <property name="text">
+            <string>Экипаж</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
+      </widget>
+      <widget class="QWidget" name="page_5">
        <widget class="QLabel" name="P_flight">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>240</y>
+          <y>10</y>
           <width>181</width>
-          <height>31</height>
+          <height>21</height>
          </rect>
         </property>
         <property name="font">
@@ -659,204 +930,311 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>270</y>
-          <width>221</width>
-          <height>203</height>
+          <y>40</y>
+          <width>251</width>
+          <height>231</height>
          </rect>
         </property>
         <layout class="QGridLayout" name="gridLayout_flight">
-         <item row="6" column="0">
-          <widget class="QLabel" name="P_fl_lb_maxhi">
-           <property name="text">
-            <string>Максимальная высота</string>
-           </property>
-          </widget>
-         </item>
-         <item row="1" column="0">
-          <widget class="QLineEdit" name="P_fl_line_cruis">
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);</string>
-           </property>
-          </widget>
-         </item>
-         <item row="5" column="2">
+         <item row="5" column="4">
           <widget class="QLabel" name="P_fl_lb_rang_km">
            <property name="text">
             <string>км</string>
            </property>
           </widget>
          </item>
-         <item row="5" column="0">
-          <widget class="QLineEdit" name="P_fl_line_rang">
+         <item row="1" column="1">
+          <widget class="QLineEdit" name="P_fl_line_cruis_ot">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="2">
+         <item row="3" column="4">
           <widget class="QLabel" name="P_fl_lb_maxsp_kmh">
            <property name="text">
             <string>км/ч</string>
            </property>
           </widget>
          </item>
-         <item row="1" column="2">
+         <item row="1" column="4">
           <widget class="QLabel" name="P_fl_lb_cruis_kmh">
            <property name="text">
             <string>км/ч</string>
            </property>
           </widget>
          </item>
-         <item row="3" column="0">
-          <widget class="QLineEdit" name="P_fl_line_maxsp">
+         <item row="5" column="1">
+          <widget class="QLineEdit" name="P_fl_line_rang_ot">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
-         <item row="4" column="0">
-          <widget class="QLabel" name="P_fl_lb_rang">
-           <property name="text">
-            <string>Дальность полёта</string>
-           </property>
-          </widget>
-         </item>
-         <item row="2" column="0">
-          <widget class="QLabel" name="P_fl_lb_maxsp">
-           <property name="text">
-            <string>Максимальная скорость</string>
-           </property>
-          </widget>
-         </item>
-         <item row="0" column="0">
-          <widget class="QLabel" name="P_fl_lb_cruis">
-           <property name="text">
-            <string>Крейсерсая скорость</string>
-           </property>
-          </widget>
-         </item>
-         <item row="7" column="0">
-          <widget class="QLineEdit" name="P_fl_line_maxhi">
+         <item row="3" column="1">
+          <widget class="QLineEdit" name="P_fl_line_maxsp_ot">
            <property name="styleSheet">
             <string notr="true">background-color: rgb(255, 255, 255);</string>
            </property>
           </widget>
          </item>
-         <item row="7" column="2">
+         <item row="7" column="4">
           <widget class="QLabel" name="P_fl_lb_maxhi_km">
            <property name="text">
             <string>км</string>
            </property>
           </widget>
          </item>
+         <item row="7" column="1">
+          <widget class="QLineEdit" name="P_fl_line_maxhi_ot">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="QLabel" name="label_32">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QLabel" name="label_25">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QLabel" name="label_29">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="QLabel" name="label_28">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="QLabel" name="label_30">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="QLabel" name="label_27">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="QLabel" name="label_31">
+           <property name="text">
+            <string>до</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QLineEdit" name="P_fl_line_cruis_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="QLineEdit" name="P_fl_line_maxsp_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="QLineEdit" name="P_fl_line_rang_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="QLineEdit" name="P_fl_line_maxhi_do">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0" colspan="5">
+          <widget class="QLabel" name="P_fl_lb_maxhi">
+           <property name="text">
+            <string>Максимальная высота</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" colspan="5">
+          <widget class="QLabel" name="P_fl_lb_rang">
+           <property name="text">
+            <string>Дальность полёта</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" colspan="5">
+          <widget class="QLabel" name="P_fl_lb_maxsp">
+           <property name="text">
+            <string>Максимальная скорость</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="5">
+          <widget class="QLabel" name="P_fl_lb_cruis">
+           <property name="text">
+            <string>Крейсерсая скорость</string>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="QLabel" name="label_26">
+           <property name="text">
+            <string>от</string>
+           </property>
+          </widget>
+         </item>
         </layout>
        </widget>
-       <widget class="QFrame" name="frame">
+       <widget class="QLabel" name="P_eng">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>480</y>
-          <width>201</width>
-          <height>111</height>
+          <y>270</y>
+          <width>181</width>
+          <height>31</height>
          </rect>
         </property>
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
         </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
+        <property name="text">
+         <string>Двигатель</string>
         </property>
-        <widget class="QLabel" name="P_eng">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>181</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>12</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Двигатель</string>
-         </property>
-        </widget>
-        <widget class="QLabel" name="P_eng_type">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>30</y>
-           <width>181</width>
-           <height>31</height>
-          </rect>
-         </property>
-         <property name="font">
-          <font>
-           <pointsize>10</pointsize>
-          </font>
-         </property>
-         <property name="text">
-          <string>Тип</string>
-         </property>
-        </widget>
-        <widget class="QWidget" name="formLayoutWidget_16">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>60</y>
-           <width>221</width>
-           <height>51</height>
-          </rect>
-         </property>
-         <layout class="QFormLayout" name="formLayout_eng">
-          <item row="0" column="0">
-           <widget class="QCheckBox" name="P_eng_type_cb_TRDD">
-            <property name="text">
-             <string>ТРДД</string>
-            </property>
-           </widget>
-          </item>
-          <item row="0" column="1">
-           <widget class="QCheckBox" name="P_eng_type_cb_TRD">
-            <property name="text">
-             <string>ТРД</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="0">
-           <widget class="QCheckBox" name="P_eng_type_cb_TVD">
-            <property name="text">
-             <string>ТВД</string>
-            </property>
-           </widget>
-          </item>
-          <item row="1" column="1">
-           <widget class="QCheckBox" name="P_eng_type_cb_PD">
-            <property name="text">
-             <string>ПД</string>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </widget>
+       </widget>
+       <widget class="QLabel" name="P_eng_type">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>300</y>
+          <width>181</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Тип</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="gridLayoutWidget_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>330</y>
+          <width>251</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <item row="0" column="2">
+          <widget class="QCheckBox" name="P_eng_type_cb_PD">
+           <property name="text">
+            <string>ПД</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QCheckBox" name="P_eng_type_cb_TRDD">
+           <property name="text">
+            <string>ТРДД</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QCheckBox" name="P_eng_type_cb_TVD">
+           <property name="text">
+            <string>ТВД</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QCheckBox" name="P_eng_type_cb_TRD">
+           <property name="text">
+            <string>ТРД</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
+     </widget>
+     <widget class="QPushButton" name="pushButton_forward_p">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вперёд</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_back_p">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>690</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_find_p">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>720</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Найти</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_heli">
      <attribute name="title">
       <string>Helicopter</string>
      </attribute>
-     <widget class="QStackedWidget" name="stackedWidget_2">
+     <widget class="QStackedWidget" name="stackedWidget_heli">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>240</width>
-        <height>900</height>
+        <width>271</width>
+        <height>681</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -907,7 +1285,7 @@
          <rect>
           <x>10</x>
           <y>220</y>
-          <width>221</width>
+          <width>251</width>
           <height>103</height>
          </rect>
         </property>
@@ -1029,7 +1407,7 @@
          <rect>
           <x>10</x>
           <y>350</y>
-          <width>221</width>
+          <width>251</width>
           <height>53</height>
          </rect>
         </property>
@@ -1069,7 +1447,7 @@
          <rect>
           <x>10</x>
           <y>540</y>
-          <width>221</width>
+          <width>251</width>
           <height>121</height>
          </rect>
         </property>
@@ -1165,7 +1543,7 @@
          <rect>
           <x>10</x>
           <y>430</y>
-          <width>221</width>
+          <width>251</width>
           <height>82</height>
          </rect>
         </property>
@@ -1240,7 +1618,7 @@
          <rect>
           <x>10</x>
           <y>40</y>
-          <width>232</width>
+          <width>251</width>
           <height>151</height>
          </rect>
         </property>
@@ -1342,7 +1720,7 @@
          <rect>
           <x>10</x>
           <y>40</y>
-          <width>221</width>
+          <width>251</width>
           <height>203</height>
          </rect>
         </property>
@@ -1437,7 +1815,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>240</y>
+          <y>250</y>
           <width>181</width>
           <height>31</height>
          </rect>
@@ -1455,8 +1833,8 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>270</y>
-          <width>221</width>
+          <y>290</y>
+          <width>251</width>
           <height>255</height>
          </rect>
         </property>
@@ -1572,8 +1950,8 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>580</y>
-          <width>221</width>
+          <y>610</y>
+          <width>251</width>
           <height>51</height>
          </rect>
         </property>
@@ -1612,7 +1990,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>530</y>
+          <y>550</y>
           <width>181</width>
           <height>31</height>
          </rect>
@@ -1630,7 +2008,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>560</y>
+          <y>580</y>
           <width>55</width>
           <height>16</height>
          </rect>
@@ -1646,25 +2024,64 @@
        </widget>
       </widget>
      </widget>
+     <widget class="QPushButton" name="pushButton_forward_h">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вперёд</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_back_h">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>690</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_find_h">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>720</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Найти</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_All">
      <attribute name="title">
       <string>All_LA</string>
      </attribute>
-     <widget class="QStackedWidget" name="stackedWidget_4">
+     <widget class="QStackedWidget" name="stackedWidget_all">
       <property name="geometry">
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>240</width>
-        <height>900</height>
+        <width>271</width>
+        <height>681</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">background-color: rgb(166, 166, 166);</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_7">
        <widget class="QLabel" name="label_56">
@@ -1708,7 +2125,7 @@
          <rect>
           <x>10</x>
           <y>220</y>
-          <width>221</width>
+          <width>251</width>
           <height>103</height>
          </rect>
         </property>
@@ -1830,7 +2247,7 @@
          <rect>
           <x>10</x>
           <y>350</y>
-          <width>221</width>
+          <width>251</width>
           <height>53</height>
          </rect>
         </property>
@@ -1870,7 +2287,7 @@
          <rect>
           <x>10</x>
           <y>540</y>
-          <width>221</width>
+          <width>251</width>
           <height>71</height>
          </rect>
         </property>
@@ -1924,7 +2341,7 @@
          <rect>
           <x>10</x>
           <y>430</y>
-          <width>221</width>
+          <width>251</width>
           <height>82</height>
          </rect>
         </property>
@@ -1999,7 +2416,7 @@
          <rect>
           <x>10</x>
           <y>40</y>
-          <width>232</width>
+          <width>251</width>
           <height>151</height>
          </rect>
         </property>
@@ -2101,7 +2518,7 @@
          <rect>
           <x>10</x>
           <y>40</y>
-          <width>221</width>
+          <width>251</width>
           <height>203</height>
          </rect>
         </property>
@@ -2215,7 +2632,7 @@
          <rect>
           <x>10</x>
           <y>270</y>
-          <width>221</width>
+          <width>251</width>
           <height>203</height>
          </rect>
         </property>
@@ -2311,7 +2728,7 @@
          <rect>
           <x>10</x>
           <y>480</y>
-          <width>201</width>
+          <width>221</width>
           <height>111</height>
          </rect>
         </property>
@@ -2362,7 +2779,7 @@
           <rect>
            <x>0</x>
            <y>60</y>
-           <width>221</width>
+           <width>241</width>
            <height>51</height>
           </rect>
          </property>
@@ -2399,6 +2816,45 @@
         </widget>
        </widget>
       </widget>
+     </widget>
+     <widget class="QPushButton" name="push_forward_all">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>690</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Вперёд</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_back_all">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>690</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Назад</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="push_find_all">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>720</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Найти</string>
+      </property>
      </widget>
     </widget>
    </widget>
