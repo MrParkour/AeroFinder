@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, uic
 import sys
  
 app = QtWidgets.QApplication([])
-ui = uic.loadUi("ui_desingnes/ui_design_V_3.ui")
+ui = uic.loadUi("ui_desingnes/ui_design_V_4.ui")
 
 la = ui.tabWidget.currentIndex()
 
