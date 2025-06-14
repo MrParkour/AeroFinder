@@ -2595,7 +2595,7 @@
          <item row="1" column="0">
           <widget class="QCheckBox" name="checkBox_77">
            <property name="text">
-            <string>Аерика</string>
+            <string>Америка</string>
            </property>
           </widget>
          </item>
