@@ -134,9 +134,48 @@ def finding():
             heli_engine_check = True
             heli_engine_array.append("ПД")
     elif button == ui.push_find_all:
-        # finding all
-        obj = ui.stackedWidget_all
-
+        all_country_check = False
+        all_country_array = []
+    # Проверка флажков на странах всех ла
+        if ui.checkBox_75.isChecked():
+            all_country_check = True
+            all_country_array.append("Россия")
+        if ui.checkBox_76.isChecked():
+            all_country_check = True
+            all_country_array.append("СССР")
+        if ui.checkBox_77.isChecked():
+            all_country_check = True
+            all_country_array.append("Америка")
+        if ui.checkBox_78.isChecked():
+            all_country_check = True
+            all_country_array.append("Китай")
+        if ui.checkBox_79.isChecked():
+            all_country_check = True
+            all_country_array.append("Великобритания")
+        if ui.checkBox_80.isChecked():
+            all_country_check = True
+            all_country_array.append("Италия")
+        if ui.checkBox_82.isChecked():
+            all_country_check = True
+            all_country_array.append("Франция")
+        if ui.checkBox_82.isChecked():
+            all_country_check = True
+            all_country_array.append("Испания")
+    # Проверка флажков на двигателх всех ла
+        all_engine_check = False
+        all_angine_array = []
+        if ui.checkBox_91.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ТРДД")
+        if ui.checkBox_92.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ТРД")
+        if ui.checkBox_93.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ТВД")
+        if ui.checkBox_94.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ПД")
     # сделать проверку на флажки
     # записать итог в строку вида "спортивный, перехватчик, истребитель"
     # добавить переменную bool которая показывается есть ли чтото или нет
