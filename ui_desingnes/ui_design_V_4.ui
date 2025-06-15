@@ -655,7 +655,7 @@
          <item row="0" column="0" colspan="5">
           <widget class="QLabel" name="P_size_lb_long">
            <property name="text">
-            <string>Длинна</string>
+            <string>Длина</string>
            </property>
           </widget>
          </item>
@@ -1478,7 +1478,7 @@
        <string notr="true">background-color: rgb(166, 166, 166);</string>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="page_3">
        <widget class="QLabel" name="H_naz">
@@ -1713,7 +1713,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="H_size_lb_lomg">
            <property name="text">
-            <string>Длинна</string>
+            <string>Длина</string>
            </property>
           </widget>
          </item>
@@ -2383,21 +2383,6 @@
            <item row="0" column="0">
             <widget class="QWidget" name="widget_6" native="true">
              <layout class="QGridLayout" name="gridLayout_9">
-              <item row="1" column="0">
-               <widget class="QLabel" name="H_description_1">
-                <property name="font">
-                 <font>
-                  <pointsize>9</pointsize>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>description_1</string>
-                </property>
-                <property name="wordWrap">
-                 <bool>true</bool>
-                </property>
-               </widget>
-              </item>
               <item row="0" column="0">
                <widget class="QLabel" name="H_label_1">
                 <property name="minimumSize">
@@ -2440,6 +2425,21 @@
                 </property>
                 <property name="text">
                  <string>label_1</string>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="H_description_1">
+                <property name="font">
+                 <font>
+                  <pointsize>9</pointsize>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>description_1</string>
                 </property>
                 <property name="wordWrap">
                  <bool>true</bool>
@@ -2783,7 +2783,7 @@
          <item row="0" column="0">
           <widget class="QLabel" name="label_160">
            <property name="text">
-            <string>Длинна</string>
+            <string>Длина</string>
            </property>
           </widget>
          </item>
