@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -98,7 +98,7 @@
          <item row="0" column="0">
           <widget class="QCheckBox" name="P_coun_cb_Rus">
            <property name="text">
-            <string>Россиия</string>
+            <string>Россия</string>
            </property>
           </widget>
          </item>
@@ -1447,6 +1447,19 @@
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="pushButton_clear_plane">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>720</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_heli">
      <attribute name="title">
@@ -1465,7 +1478,7 @@
        <string notr="true">background-color: rgb(166, 166, 166);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page_3">
        <widget class="QLabel" name="H_naz">
@@ -1517,7 +1530,7 @@
          <item row="0" column="0">
           <widget class="QCheckBox" name="H_co_cb_Rus">
            <property name="text">
-            <string>Россиия</string>
+            <string>Россия</string>
            </property>
           </widget>
          </item>
@@ -1973,7 +1986,7 @@
          <item row="6" column="0">
           <widget class="QLabel" name="H_load_lb_maxlo">
            <property name="text">
-            <string>Максимаьная нагрузка</string>
+            <string>Максимальная нагрузка</string>
            </property>
           </widget>
          </item>
@@ -2511,6 +2524,19 @@
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="pushButton_clear_heli">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>720</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_All">
      <attribute name="title">
@@ -2581,7 +2607,7 @@
          <item row="0" column="0">
           <widget class="QCheckBox" name="checkBox_75">
            <property name="text">
-            <string>Россиия</string>
+            <string>Россия</string>
            </property>
           </widget>
          </item>
@@ -2595,7 +2621,7 @@
          <item row="1" column="0">
           <widget class="QCheckBox" name="checkBox_77">
            <property name="text">
-            <string>Аерика</string>
+            <string>Америка</string>
            </property>
           </widget>
          </item>
@@ -2995,7 +3021,7 @@
          <item row="6" column="0">
           <widget class="QLabel" name="label_176">
            <property name="text">
-            <string>Максимаьная нагрузка</string>
+            <string>Максимальная нагрузка</string>
            </property>
           </widget>
          </item>
@@ -3037,7 +3063,7 @@
          <item row="4" column="0">
           <widget class="QLabel" name="label_180">
            <property name="text">
-            <string>Пасажировместимость</string>
+            <string>Пассажировместимость</string>
            </property>
           </widget>
          </item>
@@ -3532,6 +3558,19 @@
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_clear_all">
+      <property name="geometry">
+       <rect>
+        <x>110</x>
+        <y>720</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
      </widget>
     </widget>
    </widget>
