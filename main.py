@@ -53,21 +53,95 @@ def finding():
     button = QtWidgets.QApplication.instance().sender()
     exc = ""
     output = []
-    if button == ui.pushButton_find_p:  
+    if button == ui.pushButton_find_p:
         # finding planes
         # если флажок россия стоит то в вида строки добавить россия
         plans_country_check = False
         plane_country_array = []
+    # Провекра флажков у стран самолётов
         if ui.P_coun_cb_Rus.isChecked():
             plans_country_check = True
             plane_country_array.append("Россия")
         if ui.P_coun_cb_USSR.isChecked():
             plans_country_check = True
             plane_country_array.append("СССР")
-        
-    
+        if ui.P_coun_cb_Amer.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Америка")
+        if ui.P_coun_cb_Chinazes.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Китай")
+        if ui.P_coun_cb_GBrit.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Великобритания")
+        if ui.P_coun_cb_Iatli.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Италия")
+        if ui.P_coun_cb_Fran.isCheked():
+            plans_country_check = True
+            plane_country_array.append("Франция")
+        if ui.P_coun_cb_Spain.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Испания")
+    # Прверка флажков у двигателей самолётов
+        plans_engine_check = False
+        plane_engine_array = []
+        if ui.P_eng_type_cb_TRDD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ТРДД")
+        if ui.P_eng_type_cb_TVD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ТВД")
+        if ui.P_eng_type_cb_PD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ПД")
+        if ui.P_eng_type_cb_TRD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ТРД")
 
     elif button == ui.pushButton_find_h:
+        heli_country_check = False
+        heli_country_array = []
+    # Проверка флажков у стран вертолётов
+        if ui.H_co_cb_Rus.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Россия")
+        if ui.H_coun_cb_USSR.isChecked():
+            heli_country_check = True
+            heli_country_array.append("СССР")
+        if ui.H_coun_cb_Amer.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Америка")
+        if ui.H_coun_cb_Chinazes.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Китай")
+        if ui.H_coun_cb_GBrit.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Великобритания")
+        if ui.H_coun_cb_Itali.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Италия")
+        if ui.H_coun_cb_Fran.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Франция")
+        if ui.H_coun_cb_Spain.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Испания")
+    # Провекрка флажков двигателей вертолётов
+        heli_engine_check = False
+        heli_engine_array = []
+        if ui.H_eng_type_cb_TRDD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ТРДД")
+        if ui.H_eng_type_cb_TRD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ТРД")
+        if ui.H_eng_type_cb_TVD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ТВД")
+        if ui.H_eng_type_cb_PD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ПД")
         # finding helicopters
         exc = "SELECT * FROM aircrafts" + "\n"
         exc += """WHERE TYPE = "вертолет"\n"""
@@ -218,6 +292,48 @@ def finding():
         output = cursor.fetchall()
       
     elif button == ui.push_find_all:
+        all_country_check = False
+        all_country_array = []
+    # Проверка флажков на странах всех ла
+        if ui.checkBox_75.isChecked():
+            all_country_check = True
+            all_country_array.append("Россия")
+        if ui.checkBox_76.isChecked():
+            all_country_check = True
+            all_country_array.append("СССР")
+        if ui.checkBox_77.isChecked():
+            all_country_check = True
+            all_country_array.append("Америка")
+        if ui.checkBox_78.isChecked():
+            all_country_check = True
+            all_country_array.append("Китай")
+        if ui.checkBox_79.isChecked():
+            all_country_check = True
+            all_country_array.append("Великобритания")
+        if ui.checkBox_80.isChecked():
+            all_country_check = True
+            all_country_array.append("Италия")
+        if ui.checkBox_82.isChecked():
+            all_country_check = True
+            all_country_array.append("Франция")
+        if ui.checkBox_82.isChecked():
+            all_country_check = True
+            all_country_array.append("Испания")
+    # Проверка флажков на двигателх всех ла
+        all_engine_check = False
+        all_angine_array = []
+        if ui.checkBox_91.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ТРДД")
+        if ui.checkBox_92.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ТРД")
+        if ui.checkBox_93.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ТВД")
+        if ui.checkBox_94.isChecked():
+            all_engine_check = True
+            all_angine_array.append("ПД")
         # finding all
 
         exc = "SELECT * FROM aircrafts" + "\n"
