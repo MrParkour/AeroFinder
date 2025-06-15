@@ -44,25 +44,99 @@ def finding():
     # активируетс япри нажатии на кнопку найти
     # далее проверяется на какой странице (самолёты, вертолёты, все) была нажата кнопка
     button = QtWidgets.QApplication.instance().sender()
-    if button == ui.pushButton_find_p:  
+    if button == ui.pushButton_find_p:
         # finding planes
         # если флажок россия стоит то в вида строки добавить россия
         plans_country_check = False
         plane_country_array = []
+    # Провекра флажков у стран самолётов
         if ui.P_coun_cb_Rus.isChecked():
             plans_country_check = True
             plane_country_array.append("Россия")
         if ui.P_coun_cb_USSR.isChecked():
             plans_country_check = True
             plane_country_array.append("СССР")
+        if ui.P_coun_cb_Amer.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Америка")
+        if ui.P_coun_cb_Chinazes.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Китай")
+        if ui.P_coun_cb_GBrit.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Великобритания")
+        if ui.P_coun_cb_Iatli.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Италия")
+        if ui.P_coun_cb_Fran.isCheked():
+            plans_country_check = True
+            plane_country_array.append("Франция")
+        if ui.P_coun_cb_Spain.isChecked():
+            plans_country_check = True
+            plane_country_array.append("Испания")
+    # Прверка флажков у двигателей самолётов
+        plans_engine_check = False
+        plane_engine_array = []
+        if ui.P_eng_type_cb_TRDD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ТРДД")
+        if ui.P_eng_type_cb_TVD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ТВД")
+        if ui.P_eng_type_cb_PD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ПД")
+        if ui.P_eng_type_cb_TRD.isChecked():
+            plans_engine_check = True
+            plane_engine_array.append("ТРД")
 
     elif button == ui.pushButton_find_h:
-        # finding helicopters
-        obj = ui.stackedWidget_heli
+        heli_country_check = False
+        heli_country_array = []
+    # Проверка флажков у стран вертолётов
+        if ui.H_co_cb_Rus.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Россия")
+        if ui.H_coun_cb_USSR.isChecked():
+            heli_country_check = True
+            heli_country_array.append("СССР")
+        if ui.H_coun_cb_Amer.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Америка")
+        if ui.H_coun_cb_Chinazes.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Китай")
+        if ui.H_coun_cb_GBrit.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Великобритания")
+        if ui.H_coun_cb_Itali.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Италия")
+        if ui.H_coun_cb_Fran.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Франция")
+        if ui.H_coun_cb_Spain.isChecked():
+            heli_country_check = True
+            heli_country_array.append("Испания")
+    # Провекрка флажков двигателей вертолётов
+        heli_engine_check = False
+        heli_engine_array = []
+        if ui.H_eng_type_cb_TRDD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ТРДД")
+        if ui.H_eng_type_cb_TRD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ТРД")
+        if ui.H_eng_type_cb_TVD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ТВД")
+        if ui.H_eng_type_cb_PD.isChecked():
+            heli_engine_check = True
+            heli_engine_array.append("ПД")
     elif button == ui.push_find_all:
         # finding all
         obj = ui.stackedWidget_all
-    
+
     # сделать проверку на флажки
     # записать итог в строку вида "спортивный, перехватчик, истребитель"
     # добавить переменную bool которая показывается есть ли чтото или нет
