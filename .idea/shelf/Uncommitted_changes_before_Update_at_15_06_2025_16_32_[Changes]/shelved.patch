@@ -1,0 +1,29 @@
+Index: main.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>from PyQt5 import QtWidgets, uic\r\nimport sys\r\nimport sqlite3\r\n\r\nconnection = sqlite3.connect(\"data/plane_db.db\")\r\ncursor = connection.cursor()\r\n \r\napp = QtWidgets.QApplication([])\r\nui = uic.loadUi(\"ui_desingnes/ui_design_V_4.ui\")\r\n\r\nla = ui.tabWidget.currentIndex()\r\n\r\n\r\ndef next_page_plane():\r\n    button = QtWidgets.QApplication.instance().sender()\r\n    if button == ui.pushButton_forward_p:\r\n        obj = ui.stackedWidget_plane\r\n    elif button == ui.pushButton_forward_h:\r\n        obj = ui.stackedWidget_heli\r\n    elif button == ui.push_forward_all:\r\n        obj = ui.stackedWidget_all\r\n\r\n    if obj.currentIndex() == (obj.count() - 1):\r\n        obj.setCurrentIndex(0)\r\n    else:\r\n        obj.setCurrentIndex(obj.currentIndex() + 1)\r\n\r\ndef prev_page_plane():\r\n    button = QtWidgets.QApplication.instance().sender()\r\n    if button == ui.pushButton_back_p:\r\n        obj = ui.stackedWidget_plane\r\n    elif button == ui.pushButton_back_h:\r\n        obj = ui.stackedWidget_heli\r\n    elif button == ui.push_back_all:\r\n        obj = ui.stackedWidget_all\r\n\r\n    if obj.currentIndex() == 0:\r\n        obj.setCurrentIndex(obj.count() - 1)\r\n    else:\r\n        obj.setCurrentIndex(obj.currentIndex() - 1)\r\n\r\n\r\ndef finding():\r\n    # активируетс япри нажатии на кнопку найти\r\n    # далее проверяется на какой странице (самолёты, вертолёты, все) была нажата кнопка\r\n    button = QtWidgets.QApplication.instance().sender()\r\n    if button == ui.pushButton_find_p:  \r\n        # finding planes\r\n        # если флажок россия стоит то в вида строки добавить россия\r\n        plans_country_check = False\r\n        plane_country_array = []\r\n        if ui.P_coun_cb_Rus.isChecked():\r\n            plans_country_check = True\r\n            plane_country_array.append(\"Россия\")\r\n        if ui.P_coun_cb_USSR.isChecked():\r\n            plans_country_check = True\r\n            plane_country_array.append(\"СССР\")\r\n\r\n    elif button == ui.pushButton_find_h:\r\n        # finding helicopters\r\n        obj = ui.stackedWidget_heli\r\n    elif button == ui.push_find_all:\r\n        # finding all\r\n        obj = ui.stackedWidget_all\r\n    \r\n    # сделать проверку на флажки\r\n    # записать итог в строку вида \"спортивный, перехватчик, истребитель\"\r\n    # добавить переменную bool которая показывается есть ли чтото или нет\r\n\r\n\r\n    exc = \"\"\"SELECT * FROM aircrafts\r\nWHERE TYPE IN () \r\nAND COUNTRY IN () \r\nAND YEAR BETWEEN X*0.9 AND X*1.1\r\nAND APPLICATION IN (\"\")\r\nAND PURPOSE\r\nAND ENGINE_NAME\r\nAND ENGINE_TYPE\r\nAND ENGINE_ROD\r\nAND ENGINE_FORSAGE_ROD\r\nAND ENGINE_CONSUMPTION\r\nAND MASS_EMPTY\r\nAND MASS_NORMAL\r\nAND MASS_MAXIMAL\r\nAND LENGTH\r\nAND HEIGHT\r\nAND WING_SPAN\r\nAND WING_AREA\r\nAND WING_SWEEP\r\nAND WHEEL_BASE\r\nAND WHEEL_TRACK\r\nAND SPEED_MAX\r\nAND SPEED_NORMAL\r\nAND RANGE\r\nAND HEIGHT_MAX\r\nAND SERVICE_CEILING\r\nAND STATIC_SEILING\r\nAND CREW\r\nAND ARMAMENT\r\nAND PASSENGERS\r\nAND PAYLOAD;\"\"\"\r\n    cursor.execute(exc)\r\n    output = cursor.fetchall()\r\n    if output != []:\r\n        # vivod\r\n        pass\r\n    else:\r\n        # grusniy smalik\r\n        pass\r\n\r\nui.pushButton_forward_p.clicked.connect(next_page_plane)\r\nui.pushButton_back_p.clicked.connect(prev_page_plane)\r\nui.pushButton_forward_h.clicked.connect(next_page_plane)\r\nui.pushButton_back_h.clicked.connect(prev_page_plane)\r\nui.push_forward_all.clicked.connect(next_page_plane)\r\nui.push_back_all.clicked.connect(prev_page_plane)\r\nui.push_find_all.clicked.connect(finding)\r\nui.pushButton_find_p.clicked.connect(finding)\r\nui.pushButton_find_h.clicked.connect(finding)\r\n\r\n\r\nui.show()\r\nsys.exit(app.exec())\r\nconnection.close()\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/main.py b/main.py
+--- a/main.py	(revision ff9db91698f99bcd12bf7a93b57afed6ab71515f)
++++ b/main.py	(date 1749994254568)
+@@ -47,15 +47,11 @@
+     if button == ui.pushButton_find_p:  
+         # finding planes
+         # если флажок россия стоит то в вида строки добавить россия
+-        plans_country_check = False
++        plany_country_check = False
+         plane_country_array = []
+         if ui.P_coun_cb_Rus.isChecked():
+-            plans_country_check = True
+-            plane_country_array.append("Россия")
+-        if ui.P_coun_cb_USSR.isChecked():
+-            plans_country_check = True
+-            plane_country_array.append("СССР")
+-
++            plany_country_check = True
++            plane_country_array.append("россия")
+     elif button == ui.pushButton_find_h:
+         # finding helicopters
+         obj = ui.stackedWidget_heli
