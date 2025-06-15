@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, uic
 import sys
 import sqlite3
 
-connection = sqlite3.connect("data/plane_db.db")
+connection = sqlite3.connect("database/plane_db.db")
 cursor = connection.cursor()
  
 app = QtWidgets.QApplication([])
