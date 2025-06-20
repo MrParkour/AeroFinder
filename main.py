@@ -221,6 +221,43 @@ AND PAYLOAD;"""
         # grusniy smalik
         pass
 
+def clear():
+    # прверить на какой стр нажата кнопка, затем очистить все лайны и боксы на этой стр
+    button = QtWidgets.QApplication.instance().sender()
+    if button == ui.pushButton_clear_plane:
+        # очистка всех лайнов в самолётах
+        ui.P_year_line_ot.clear()
+        ui.P_year_line_do.clear()
+
+        ui.P_wei_line_sob_ot.clear()
+        ui.P_wei_line_sob_do.clear()
+        ui.P_wei_line_norm_ot.clear()
+        ui.P_wei_line_norm_do.clear()
+        ui.P_wei_line_max_ot.clear()
+        ui.P_wei_line_max_do.clear()
+
+        ui.P_size_line_long_ot.clear()
+        ui.P_size_line_long_do.clear()
+        ui.P_size_line_high_ot.clear()
+        ui.P_size_line_high_do.clear()
+        ui.P_size_line_razmax_ot.clear()
+        ui.P_size_line_rasmax_do.clear()
+        ui.P_size_line_plosh_ot.clear()
+        ui.P_size_line_plosh_do.clear()
+        ui.P_size_line_strel_ot.clear()
+        ui.P_size_line_strel_do.clear()
+
+        ui.P_load_line_crew_ot.clear()
+        ui.P_load_line_crew_do.clear()
+        ui.P_load_line_comlo_ot.clear()
+        ui.P_load_line_comlo_do.clear()
+        ui.P_load_line_pascap_ot.clear()
+        ui.P_load_line_pascap_do.clear()
+        ui.P_load_line_maxlo_ot.clear()
+        ui.P_load_line_maxlo_do.clear()
+
+        ui.P_fl_line_cruis
+
 ui.pushButton_forward_p.clicked.connect(next_page_plane)
 ui.pushButton_back_p.clicked.connect(prev_page_plane)
 ui.pushButton_forward_h.clicked.connect(next_page_plane)
@@ -230,7 +267,9 @@ ui.push_back_all.clicked.connect(prev_page_plane)
 ui.push_find_all.clicked.connect(finding)
 ui.pushButton_find_p.clicked.connect(finding)
 ui.pushButton_find_h.clicked.connect(finding)
-
+ui.pushButton_clear_plane.clicked.connect(clear)
+ui.pushButton_clear_heliclicked.connect(clear)
+ui.pushButton_clear_all.clicked.connect(clear)
 
 ui.show()
 sys.exit(app.exec())
