@@ -574,7 +574,45 @@ def clear():
         ui.P_load_line_maxlo_ot.clear()
         ui.P_load_line_maxlo_do.clear()
 
-        ui.P_fl_line_cruis
+        ui.P_fl_line_cruis_ot.clear()
+        ui.P_fl_line_cruis_do.clear()
+        ui.P_fl_line_maxsp_ot.clear()
+        ui.P_fl_line_maxsp_do.clear()
+        ui.P_fl_line_rang_ot.clear()
+        ui.P_fl_line_range_do.clear()
+        ui.P_fl_line_maxhi_ot.clear()
+        ui.P_fl_line_maxhi_do.clear()
+
+        # очистка всех чекбоксов в сомолётах
+        ui.P_coun_cb_Rus.setChecking(False)
+        ui.P_coun_cb_Amer.setChecking(False)
+        ui.P_coun_cb_GBrit.setChecking(False)
+        ui.P_coun_cb_Fran.setChecking(False)
+        ui.P_coun_cb_USSR.setChecking(False)
+        ui.P_coun_cb_Chinazes.setChecking(False)
+        ui.P_coun_cb_Itali.setChecking(False)
+        ui.P_coun_cb_Spain.setChecking(False)
+
+        ui.P_eng_type_cb_TRDD.setChecking(False)
+        ui.P_eng_type_cb_TVD.setChecking(False)
+        ui.P_eng_type_cb_PD.setChecking(False)
+        ui.P_eng_type_cb_TRD.setChecking(False)
+
+        # очистка всех лайнов в вертолётах
+        ui.H_year_line_ot.setChecking(False)
+        ui.H_yaer_line_do.setChecking(False)
+
+        ui.H_wei_line_sob.setChecking(False)
+        ui.H_wei_line_norm.setChecking(False)
+        ui.H_wei_line_max.setChecking(False)
+
+        ui.H_size_line_long.setChecking(False)
+        ui.H_size_line_high.setChecking(False)
+        ui.H_size_line_Dnes.setChecking(False)
+        ui.H_size_line_Drul.setChecking(False)
+
+
+
 
 ui.pushButton_forward_p.clicked.connect(next_page_plane)
 ui.pushButton_back_p.clicked.connect(prev_page_plane)
