@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -37,7 +37,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>720</y>
+        <y>730</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -276,7 +276,7 @@
         <x>-10</x>
         <y>0</y>
         <width>301</width>
-        <height>711</height>
+        <height>721</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -307,7 +307,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-778</y>
+            <y>0</y>
             <width>258</width>
             <height>1467</height>
            </rect>
@@ -1322,7 +1322,7 @@
      <widget class="QPushButton" name="pushButton_find_h">
       <property name="geometry">
        <rect>
-        <x>0</x>
+        <x>10</x>
         <y>730</y>
         <width>93</width>
         <height>28</height>
@@ -1560,9 +1560,9 @@
       <property name="geometry">
        <rect>
         <x>-10</x>
-        <y>-10</y>
-        <width>311</width>
-        <height>741</height>
+        <y>0</y>
+        <width>301</width>
+        <height>721</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -1578,8 +1578,8 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-750</y>
-            <width>266</width>
+            <y>0</y>
+            <width>256</width>
             <height>1467</height>
            </rect>
           </property>
@@ -2299,7 +2299,7 @@
               </font>
              </property>
              <property name="text">
-              <string> Год выпуска</string>
+              <string>Год выпуска</string>
              </property>
             </widget>
            </item>
@@ -2594,7 +2594,7 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>720</y>
+        <y>730</y>
         <width>93</width>
         <height>28</height>
        </rect>
@@ -2832,8 +2832,8 @@
        <rect>
         <x>-10</x>
         <y>0</y>
-        <width>311</width>
-        <height>731</height>
+        <width>301</width>
+        <height>721</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -2849,8 +2849,8 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-604</y>
-            <width>266</width>
+            <y>0</y>
+            <width>256</width>
             <height>1311</height>
            </rect>
           </property>
