@@ -1578,9 +1578,9 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-698</y>
+            <y>-750</y>
             <width>266</width>
-            <height>1415</height>
+            <height>1467</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_22">
@@ -1893,10 +1893,10 @@
            </item>
            <item row="18" column="0">
             <layout class="QGridLayout" name="gridLayout_flight_2">
-             <item row="5" column="4">
-              <widget class="QLabel" name="P_fl_lb_rang_km_2">
-               <property name="text">
-                <string>км</string>
+             <item row="9" column="1">
+              <widget class="QLineEdit" name="H_fl_line_prhi_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
@@ -1914,10 +1914,10 @@
                </property>
               </widget>
              </item>
-             <item row="1" column="4">
-              <widget class="QLabel" name="P_fl_lb_cruis_kmh_2">
+             <item row="5" column="4">
+              <widget class="QLabel" name="P_fl_lb_rang_km_2">
                <property name="text">
-                <string>км/ч</string>
+                <string>км</string>
                </property>
               </widget>
              </item>
@@ -1928,6 +1928,13 @@
                </property>
               </widget>
              </item>
+             <item row="7" column="4">
+              <widget class="QLabel" name="P_fl_lb_maxhi_km_2">
+               <property name="text">
+                <string>м</string>
+               </property>
+              </widget>
+             </item>
              <item row="3" column="1">
               <widget class="QLineEdit" name="H_fl_line_maxsp_ot">
                <property name="styleSheet">
@@ -1935,15 +1942,15 @@
                </property>
               </widget>
              </item>
-             <item row="7" column="4">
-              <widget class="QLabel" name="P_fl_lb_maxhi_km_2">
+             <item row="1" column="4">
+              <widget class="QLabel" name="P_fl_lb_cruis_kmh_2">
                <property name="text">
-                <string>км</string>
+                <string>км/ч</string>
                </property>
               </widget>
              </item>
              <item row="7" column="1">
-              <widget class="QLineEdit" name="H_fl_line_maxhi_ot">
+              <widget class="QLineEdit" name="H_fl_line_sthi_ot">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
@@ -1963,17 +1970,17 @@
                </property>
               </widget>
              </item>
-             <item row="1" column="2">
-              <widget class="QLabel" name="label_38">
-               <property name="text">
-                <string>до</string>
-               </property>
-              </widget>
-             </item>
              <item row="7" column="0">
               <widget class="QLabel" name="label_39">
                <property name="text">
                 <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_38">
+               <property name="text">
+                <string>до</string>
                </property>
               </widget>
              </item>
@@ -1991,6 +1998,13 @@
                </property>
               </widget>
              </item>
+             <item row="3" column="3">
+              <widget class="QLineEdit" name="H_fl_line_maxsp_do">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
              <item row="5" column="2">
               <widget class="QLabel" name="label_42">
                <property name="text">
@@ -2005,17 +2019,17 @@
                </property>
               </widget>
              </item>
-             <item row="3" column="3">
-              <widget class="QLineEdit" name="H_fl_line_maxsp_do">
+             <item row="5" column="3">
+              <widget class="QLineEdit" name="H_fl_line_rang_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="5" column="3">
-              <widget class="QLineEdit" name="H_fl_line_rang_do">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
+             <item row="6" column="0" colspan="5">
+              <widget class="QLabel" name="P_fl_lb_maxhi_2">
+               <property name="text">
+                <string>Статический потолок</string>
                </property>
               </widget>
              </item>
@@ -2026,10 +2040,17 @@
                </property>
               </widget>
              </item>
-             <item row="6" column="0" colspan="5">
-              <widget class="QLabel" name="P_fl_lb_maxhi_2">
+             <item row="2" column="0" colspan="5">
+              <widget class="QLabel" name="P_fl_lb_maxsp_2">
                <property name="text">
-                <string>Максимальная высота</string>
+                <string>Максимальная скорость</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_44">
+               <property name="text">
+                <string>от</string>
                </property>
               </widget>
              </item>
@@ -2040,13 +2061,6 @@
                </property>
               </widget>
              </item>
-             <item row="2" column="0" colspan="5">
-              <widget class="QLabel" name="P_fl_lb_maxsp_2">
-               <property name="text">
-                <string>Максимальная скорость</string>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="0" colspan="5">
               <widget class="QLabel" name="P_fl_lb_cruis_2">
                <property name="text">
@@ -2054,10 +2068,38 @@
                </property>
               </widget>
              </item>
-             <item row="3" column="0">
-              <widget class="QLabel" name="label_44">
+             <item row="9" column="0">
+              <widget class="QLabel" name="label_96">
                <property name="text">
                 <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="2">
+              <widget class="QLabel" name="label_97">
+               <property name="text">
+                <string>до</string>
+               </property>
+              </widget>
+             </item>
+             <item row="8" column="0" colspan="5">
+              <widget class="QLabel" name="label_95">
+               <property name="text">
+                <string>Практический потолок</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="3">
+              <widget class="QLineEdit" name="H_fl_line_prhi_do">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="9" column="4">
+              <widget class="QLabel" name="label_98">
+               <property name="text">
+                <string>м</string>
                </property>
               </widget>
              </item>
@@ -2807,7 +2849,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
+            <y>-604</y>
             <width>266</width>
             <height>1311</height>
            </rect>
@@ -2926,56 +2968,56 @@
            <item row="3" column="0">
             <layout class="QFormLayout" name="formLayout_10">
              <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_75">
+              <widget class="QCheckBox" name="ALL_coun_cb_Rus">
                <property name="text">
                 <string>Россиия</string>
                </property>
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QCheckBox" name="checkBox_76">
+              <widget class="QCheckBox" name="ALL_coun_cb_USSR">
                <property name="text">
                 <string>СССР</string>
                </property>
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="QCheckBox" name="checkBox_77">
+              <widget class="QCheckBox" name="ALL_coun_cb_Amer">
                <property name="text">
                 <string>Америка</string>
                </property>
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QCheckBox" name="checkBox_78">
+              <widget class="QCheckBox" name="ALL_coun_cb_Chinazes">
                <property name="text">
                 <string>Китай</string>
                </property>
               </widget>
              </item>
              <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_79">
+              <widget class="QCheckBox" name="ALL_coun_cb_GBrit">
                <property name="text">
                 <string>Великобритания</string>
                </property>
               </widget>
              </item>
              <item row="2" column="1">
-              <widget class="QCheckBox" name="checkBox_80">
+              <widget class="QCheckBox" name="ALL_coun_cb_Itali">
                <property name="text">
                 <string>Италия</string>
                </property>
               </widget>
              </item>
              <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_81">
+              <widget class="QCheckBox" name="ALL_coun_cb_Fran">
                <property name="text">
                 <string>Франция</string>
                </property>
               </widget>
              </item>
              <item row="3" column="1">
-              <widget class="QCheckBox" name="checkBox_82">
+              <widget class="QCheckBox" name="ALL_coun_cb_Spain">
                <property name="text">
                 <string>Испания</string>
                </property>
@@ -3123,7 +3165,7 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QLineEdit" name="lineEdit_31">
+              <widget class="QLineEdit" name="ALL_year_line_ot">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
@@ -3137,7 +3179,7 @@
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QLineEdit" name="lineEdit_36">
+              <widget class="QLineEdit" name="ALL_year_line_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
@@ -3656,21 +3698,21 @@
            <item row="16" column="0">
             <layout class="QGridLayout" name="gridLayout_16">
              <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_91">
+              <widget class="QCheckBox" name="P_eng_type_cb_TRDD_2">
                <property name="text">
                 <string>ТРДД</string>
                </property>
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QCheckBox" name="checkBox_93">
+              <widget class="QCheckBox" name="P_eng_type_cb_TVD_2">
                <property name="text">
                 <string>ТВД</string>
                </property>
               </widget>
              </item>
              <item row="0" column="2">
-              <widget class="QCheckBox" name="checkBox_94">
+              <widget class="QCheckBox" name="P_eng_type_cb_PD_2">
                <property name="text">
                 <string>ПД</string>
                </property>
