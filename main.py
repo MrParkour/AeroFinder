@@ -598,6 +598,7 @@ def clear():
         ui.P_eng_type_cb_PD.setChecking(False)
         ui.P_eng_type_cb_TRD.setChecking(False)
 
+    if button == ui.pushButton_clear_heli:
         # очистка всех лайнов в вертолётах
         ui.H_year_line_ot.clear()
         ui.H_yaer_line_do.clear()
@@ -653,6 +654,7 @@ def clear():
         ui.H_eng_type_cb_PD.setChecking(False)
         ui.H_eng_type_cb_TRD.setChecking(False)
 
+    if button == ui.pushButton_clear_all:
         # очистка всех лайнов в алл
         ui.ALL_year_line_ot.clear()
         ui.ALL_year_line_do.clear()
@@ -712,8 +714,9 @@ ui.push_back_all.clicked.connect(prev_page_plane)
 ui.push_find_all.clicked.connect(finding)
 ui.pushButton_find_p.clicked.connect(finding)
 ui.pushButton_find_h.clicked.connect(finding)
+# функции очистки
 ui.pushButton_clear_plane.clicked.connect(clear)
-ui.pushButton_clear_heliclicked.connect(clear)
+ui.pushButton_clear_heli.clicked.connect(clear)
 ui.pushButton_clear_all.clicked.connect(clear)
 
 ui.show()
