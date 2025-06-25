@@ -6,7 +6,7 @@ connection = sqlite3.connect("database/plane_db.db")
 cursor = connection.cursor()
  
 app = QtWidgets.QApplication([])
-ui = uic.loadUi("ui_desingnes/ui_design_V_4.ui")
+ui = uic.loadUi("ui_designes/ui_design_V_5.ui")
 
 la = ui.tabWidget.currentIndex()
 
@@ -705,12 +705,6 @@ def clear():
         ui.P_eng_type_cb_TRD.setChecking(False)
 
 
-ui.pushButton_forward_p.clicked.connect(next_page_plane)
-ui.pushButton_back_p.clicked.connect(prev_page_plane)
-ui.pushButton_forward_h.clicked.connect(next_page_plane)
-ui.pushButton_back_h.clicked.connect(prev_page_plane)
-ui.push_forward_all.clicked.connect(next_page_plane)
-ui.push_back_all.clicked.connect(prev_page_plane)
 ui.push_find_all.clicked.connect(finding)
 ui.pushButton_find_p.clicked.connect(finding)
 ui.pushButton_find_h.clicked.connect(finding)
