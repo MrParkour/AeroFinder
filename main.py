@@ -559,7 +559,7 @@ def clear():
         ui.P_size_line_high_ot.clear()
         ui.P_size_line_high_do.clear()
         ui.P_size_line_razmax_ot.clear()
-        ui.P_size_line_rasmax_do.clear()
+        ui.P_size_line_razmax_do.clear()
         ui.P_size_line_plosh_ot.clear()
         ui.P_size_line_plosh_do.clear()
         ui.P_size_line_strel_ot.clear()
@@ -640,7 +640,7 @@ def clear():
         ui.H_fl_line_prhi_do.clear()
 
         # очистка всех боксов в вертолётах
-        ui.H_co_cb_Rus.setCheking(False)
+        ui.H_coun_cb_Rus.setCheking(False)
         ui.H_coun_cb_Amer.setCheckng(False)
         ui.H_coun_cb_GBrit.setCheckng(False)
         ui.H_coun_cb_Fran.setCheckng(False)
