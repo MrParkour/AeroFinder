@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>2</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -307,9 +307,9 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
+            <y>-768</y>
             <width>258</width>
-            <height>1411</height>
+            <height>1467</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_15">
@@ -670,7 +670,7 @@
               </widget>
              </item>
              <item row="7" column="3">
-              <widget class="QLineEdit" name="lineEdit_12">
+              <widget class="QLineEdit" name="P_load_line_maxlo_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
@@ -854,7 +854,7 @@
               </widget>
              </item>
              <item row="5" column="3">
-              <widget class="QLineEdit" name="P_size_line_rasmax_do">
+              <widget class="QLineEdit" name="P_size_line_razmax_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
@@ -1314,19 +1314,6 @@
        </item>
       </layout>
      </widget>
-     <widget class="QPushButton" name="pushButton_clear_plane">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>730</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Очистить</string>
-      </property>
-     </widget>
     </widget>
     <widget class="QWidget" name="tab_heli">
      <attribute name="title">
@@ -1592,8 +1579,8 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>260</width>
-            <height>1411</height>
+            <width>256</width>
+            <height>1467</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_22">
@@ -1847,7 +1834,7 @@
            <item row="3" column="0">
             <layout class="QFormLayout" name="formLayout_country_H">
              <item row="0" column="0">
-              <widget class="QCheckBox" name="H_co_cb_Rus">
+              <widget class="QCheckBox" name="H_coun_cb_Rus">
                <property name="text">
                 <string>Россиия</string>
                </property>
@@ -2570,7 +2557,7 @@
               </widget>
              </item>
              <item row="0" column="2">
-              <widget class="QCheckBox" name="checkBox_74">
+              <widget class="QCheckBox" name="H_eng_type_cb_PD">
                <property name="text">
                 <string>ПД</string>
                </property>
@@ -2597,19 +2584,6 @@
         </widget>
        </item>
       </layout>
-     </widget>
-     <widget class="QPushButton" name="pushButton_clear_heli">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>730</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Очистить</string>
-      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_All">
@@ -2875,9 +2849,9 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
-            <width>260</width>
-            <height>1261</height>
+            <y>-614</y>
+            <width>256</width>
+            <height>1311</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_25">
@@ -3279,7 +3253,7 @@
               </widget>
              </item>
              <item row="1" column="3">
-              <widget class="QLineEdit" name="H_size_line_long_do_2">
+              <widget class="QLineEdit" name="ALL_size_line_long_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
@@ -3724,28 +3698,28 @@
            <item row="16" column="0">
             <layout class="QGridLayout" name="gridLayout_16">
              <item row="0" column="0">
-              <widget class="QCheckBox" name="P_eng_type_cb_TRDD_2">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_TRDD">
                <property name="text">
                 <string>ТРДД</string>
                </property>
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QCheckBox" name="P_eng_type_cb_TVD_2">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_TVD">
                <property name="text">
                 <string>ТВД</string>
                </property>
               </widget>
              </item>
              <item row="0" column="2">
-              <widget class="QCheckBox" name="P_eng_type_cb_PD_2">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_PD">
                <property name="text">
                 <string>ПД</string>
                </property>
               </widget>
              </item>
              <item row="0" column="3">
-              <widget class="QCheckBox" name="checkBox_92">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_TRD">
                <property name="text">
                 <string>ТРД</string>
                </property>
@@ -3758,19 +3732,6 @@
         </widget>
        </item>
       </layout>
-     </widget>
-     <widget class="QPushButton" name="pushButton_clear_all">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>730</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Очистить</string>
-      </property>
      </widget>
     </widget>
    </widget>
