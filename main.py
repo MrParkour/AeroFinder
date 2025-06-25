@@ -238,12 +238,10 @@ def finding():
             # checking flight max heigth
             exc += gap_checking(ui.P_fl_line_maxhi_ot, ui.P_fl_line_maxhi_do, "HEIGHT_MAX")
 
-            print(exc)
             cursor.execute(exc)
             output = cursor.fetchall()
 
         elif button == ui.pushButton_find_h:
-            # finding helicopters
             heli_country_check = False
             heli_country_array = []
 
@@ -289,6 +287,7 @@ def finding():
                 heli_engine_array.append("ПД")
 
             # finding helicopters
+
             exc = "SELECT * FROM aircrafts" + "\n"
             exc += """WHERE TYPE = "вертолет"\n"""
             # creating exc for country and engine type
@@ -300,56 +299,54 @@ def finding():
 
             # checking year
             exc += gap_checking(ui.H_year_line_ot, ui.H_year_line_do, "YEAR")
-
+            
             # checking mass empty
-            exc += create_request_str(ui.H_wei_line_sob, "MASS_EMPTY")
+            exc += gap_checking(ui.H_wei_line_sob_ot, ui.H_wei_line_sob_do, "MASS_EMPTY")
 
             # checking mass normal
-            exc += create_request_str(ui.H_wei_line_norm, "MASS_NORMAL")
+            exc += gap_checking(ui.H_wei_line_norm_ot, ui.H_wei_line_norm_do, "MASS_NORMAL")
 
             # checking mass max
-            exc += create_request_str(ui.H_wei_line_max, "MASS_MAXIMAL")
+            exc += gap_checking(ui.H_wei_line_max_ot, ui.H_wei_line_max_do, "MASS_MAXIMAL")
 
             # checking size length
-            exc += create_request_str(ui.H_size_line_long, "LEN")
+            exc += gap_checking(ui.H_size_line_long_ot, ui.H_size_line_long_do, "LEN")
 
             # checking size height
-            exc += create_request_str(ui.H_size_line_high, "HEIGTH")
-
+            exc += gap_checking(ui.H_size_line_high_ot, ui.H_size_line_high_do, "HEIGTH")
             # checking size main rotor
-            exc += create_request_str(ui.H_size_line_Dnes, "DIAMETR_MAIN_ROTOR")
+            exc += gap_checking(ui.H_size_line_diamnes_ot, ui.H_size_line_diamnes_do, "DIAMETR_MAIN_ROTOR")
 
             # checking size tail rotor
-            exc += create_request_str(ui.H_size_line_Drul, "DIAMETR_TAIL_ROTOR")
+            exc += gap_checking(ui.H_size_line_diamrul_ot, ui.H_size_line_diamrul_do, "DIAMETR_TAIL_ROTOR")
 
             # checking crew
-            exc += create_request_str(ui.H_load_line_crew, "CREW")
+            exc += gap_checking(ui.H_load_line_crew_ot, ui.H_load_line_crew_do, "CREW")
 
             # checking armament
-            exc += create_request_str(ui.H_load_line_comlo, "ARMAMENT")
+            exc += gap_checking(ui.H_load_line_comlo_ot, ui.H_load_line_comlo_do, "ARMAMENT")
 
             # checking passengers
-            exc += create_request_str(ui.H_load_line_pascap, "PASSENGERS")
+            exc += gap_checking(ui.H_load_line_pascap_ot, ui.H_load_line_pascap_do, "PASSENGERS")
 
             # checking max load
-            exc += create_request_str(ui.H_load_line_maxlo, "PAYLOAD")
+            exc += gap_checking(ui.H_load_line_maxlo_ot, ui.H_load_line_maxlo_do, "PAYLOAD")
 
             # checking fligth cruise speed
-            exc += create_request_str(ui.H_fl_line_cruis, "SPEED_NORMAL")
+            exc += gap_checking(ui.H_fl_line_cruis_ot, ui.H_fl_line_cruis_do, "SPEED_NORMAL")
 
             # checking fligth max speed
-            exc += create_request_str(ui.H_fl_line_maxsp, "SPEED_MAX")
+            exc += gap_checking(ui.H_fl_line_maxsp_ot, ui.H_fl_line_maxsp_do, "SPEED_MAX")
 
             # checking fligth range
-            exc += create_request_str(ui.H_fl_line_range, "RANGE")
+            exc += gap_checking(ui.H_fl_line_rang_ot, ui.H_fl_line_rang_do, "RANGE")
 
             # checking static ceiling
-            exc += create_request_str(ui.H_fl_line_sthi, "STATIC_CEILING")
+            exc += gap_checking(ui.H_fl_line_sthi_ot, ui.H_fl_line_sthi_do, "STATIC_CEILING")
 
             # checking practice ceiling
-            exc += create_request_str(ui.H_fl_line_sthi, "SERVICE_CEILING")
+            exc += gap_checking(ui.H_fl_line_prhi_ot, ui.H_fl_line_prhi_do, "SERVICE_CEILING")
 
-            print(exc)
             cursor.execute(exc)
             output = cursor.fetchall()
 
@@ -412,15 +409,10 @@ def finding():
                 exc += """AND COUNTRY IN ('%s')\n""" % ("""', '""".join(all_country_array))
 
             # checking year
-            exc += gap_checking(ui.lineEdit_31, ui.lineEdit_36, "YEAR")
+            exc += gap_checking(ui.ALL_year_line_ot, ui.ALL_year_line_do, "YEAR")   
 
             # checking mass empty
-            mass_empty = checking_input(ui.lineEdit_83.text())
-            if mass_empty != -1:
-                exc += "AND MASS_EMPTY BETWEEN %s AND %s" % (str(mass_empty * 0.95), str(mass_empty * 1.05))
-                exc += '\n'
-            else:
-                pass
+            exc += gap_checking(ui.ALL_year_line_ot, ui.ALL_year_line_do, "YEAR")
 
             # checking mass normal
             mass_normal = checking_input(ui.lineEdit_85.text())
