@@ -597,6 +597,7 @@ def clear():
         ui.P_eng_type_cb_TVD.setChecking(False)
         ui.P_eng_type_cb_PD.setChecking(False)
         ui.P_eng_type_cb_TRD.setChecking(False)
+        ui.P_eng_type_cb_GTD.setChecking(False)
 
         ui.P_sport.setChecking(False)
         ui.P_agro.setChecking(False)
@@ -674,6 +675,7 @@ def clear():
         ui.H_eng_type_cb_TVD.setChecking(False)
         ui.H_eng_type_cb_PD.setChecking(False)
         ui.H_eng_type_cb_TRD.setChecking(False)
+        ui.H_eng_type_cb_GTD.setChecking(False)
 
         ui.H_gra.setChecking(False)
         ui.H_lab.setChecking(False)
@@ -734,10 +736,11 @@ def clear():
         ui.ALL_coun_cb_Itali.setChecking(False)
         ui.ALL_coun_cb_Spain.setChecking(False)
 
-        ui.P_eng_type_cb_TRDD.setChecking(False)
-        ui.P_eng_type_cb_TVD.setChecking(False)
-        ui.P_eng_type_cb_PD.setChecking(False)
-        ui.P_eng_type_cb_TRD.setChecking(False)
+        ui.ALL_eng_type_cb_TRDD.setChecking(False)
+        ui.ALL_eng_type_cb_TVD.setChecking(False)
+        ui.ALL_eng_type_cb_PD.setChecking(False)
+        ui.ALL_eng_type_cb_TRD.setChecking(False)
+        ui.ALL_eng_type_cb_GTD.setChecking(False)
 
         ui.ALL_sport.setChecking(False)
         ui.ALL_agro.setChecking(False)
