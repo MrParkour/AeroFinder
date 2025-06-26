@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -1745,9 +1745,9 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-862</y>
+            <y>0</y>
             <width>258</width>
-            <height>1561</height>
+            <height>1534</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_22">
@@ -1768,24 +1768,10 @@
            </property>
            <item row="3" column="0">
             <layout class="QGridLayout" name="gridLayout_naz_H">
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="H_ycheb_2">
-               <property name="text">
-                <string>Учебный</string>
-               </property>
-              </widget>
-             </item>
              <item row="1" column="1">
               <widget class="QCheckBox" name="H_gruz">
                <property name="text">
                 <string>Грузовой</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="H_shturm">
-               <property name="text">
-                <string>Штурмовик</string>
                </property>
               </widget>
              </item>
@@ -1799,7 +1785,14 @@
              <item row="1" column="2">
               <widget class="QCheckBox" name="H_paj_2">
                <property name="text">
-                <string>Пожарный</string>
+                <string>Эвакувционный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="H_shturm">
+               <property name="text">
+                <string>Штурмовик</string>
                </property>
               </widget>
              </item>
