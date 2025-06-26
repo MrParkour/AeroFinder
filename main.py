@@ -419,47 +419,36 @@ def finding():
             # checking mass normal
             exc += gap_checking(ui.ALL_wei_line_norm_ot, ui.ALL_wei_line_norm_do, "MASS_NORMAL")
             print(3)
-
             # checking mass max
             exc += gap_checking(ui.ALL_wei_line_max_ot, ui.ALL_wei_line_max_do, "MASS_MAXIMAL")
             print(4)
-
             # checking size length
             exc += gap_checking(ui.ALL_size_line_long_ot, ui.ALL_size_line_long_do, "LEN")
             print(5)
-
             # checking size height
             exc += gap_checking(ui.ALL_size_line_high_ot, ui.ALL_size_line_high_do, "HEIGTH")
             print(6)
-
             # checking crew
             exc += gap_checking(ui.ALL_load_line_crew_ot, ui.ALL_load_line_crew_do, "CREW")
             print(7)
-
             # checking armament
             exc += gap_checking(ui.ALL_load_line_comlo_ot, ui.ALL_load_line_comlo_do, "ARMAMENT")
             print(8)
-
             # checking passengers
             exc += gap_checking(ui.ALL_load_line_pascap_ot, ui.ALL_load_line_pascap_do, "PASSENGERS")
             print(9)
-
             # checking max load
             exc += gap_checking(ui.ALL_load_line_maxlo_ot, ui.ALL_load_line_maxlo_do, "PAYLOAD")
             print(10)
-
             # checking fligth cruise speed
             exc += gap_checking(ui.ALL_fl_line_cruise_ot, ui.ALL_fl_line_cruise_do, "SPEED_NORMAL")
             print(11)
-
             # checking fligth max speed
             exc += gap_checking(ui.ALL_fl_line_maxsp_ot, ui.ALL_fl_line_maxsp_do, "SPEED_MAX")
             print(12)
-
             # checking fligth range
             exc += gap_checking(ui.ALL_fl_line_rang_ot, ui.ALL_fl_line_rang_do, "RANGE")
             print(13)
-
             exc_1 = exc
             exc += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "STATIC_CEILING")
             exc_1 += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "HEIGHT_MAX")
@@ -478,8 +467,8 @@ def finding():
             # vivod
             pass
         else:
-            # grusniy smalik
-            pass
+            msg_box = QtWidgets.QMessageBox.information(None, "Ошибка", "К сожаления ни одного летательного аппарата с такими техническими характеристиками не было найдено. Измените критерии поиска и попробуйте еще раз.")
+            msg_box.setIcon(QtWidgets.QMessageBox.warning)
     except Exception:
         pass
 
@@ -652,6 +641,7 @@ def clear():
 ui.push_find_all.clicked.connect(finding)
 ui.pushButton_find_p.clicked.connect(finding)
 ui.pushButton_find_h.clicked.connect(finding)
+
 # функции очистки
 ui.pushButton_clear_plane.clicked.connect(clear)
 ui.pushButton_clear_heli.clicked.connect(clear)
