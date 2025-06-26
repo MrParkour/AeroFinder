@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1124</width>
-    <height>846</height>
+    <height>856</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -83,7 +83,7 @@
         <x>290</x>
         <y>80</y>
         <width>831</width>
-        <height>701</height>
+        <height>691</height>
        </rect>
       </property>
       <property name="styleSheet">
@@ -122,13 +122,43 @@
             <x>0</x>
             <y>0</y>
             <width>807</width>
-            <height>677</height>
+            <height>667</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_5">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="spacing">
+            <number>5</number>
+           </property>
            <item row="0" column="0">
             <widget class="QWidget" name="widget_4" native="true">
              <layout class="QGridLayout" name="gridLayout_3">
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>10</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <item row="1" column="0">
                <widget class="QLabel" name="P_description_1">
                 <property name="font">
@@ -198,6 +228,21 @@
            <item row="0" column="1">
             <widget class="QWidget" name="widget_5" native="true">
              <layout class="QGridLayout" name="gridLayout_6">
+              <property name="leftMargin">
+               <number>10</number>
+              </property>
+              <property name="topMargin">
+               <number>10</number>
+              </property>
+              <property name="rightMargin">
+               <number>10</number>
+              </property>
+              <property name="bottomMargin">
+               <number>10</number>
+              </property>
+              <property name="spacing">
+               <number>5</number>
+              </property>
               <item row="1" column="0">
                <widget class="QLabel" name="P_description_2">
                 <property name="font">
@@ -307,61 +352,28 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
+            <y>-370</y>
             <width>258</width>
-            <height>1467</height>
+            <height>1669</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_15">
-           <item row="10" column="0">
-            <widget class="QLabel" name="label_43">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Нагрузка</string>
-             </property>
-            </widget>
-           </item>
-           <item row="12" column="0">
-            <widget class="QLabel" name="P_flight">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Полёт</string>
-             </property>
-            </widget>
-           </item>
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="spacing">
+            <number>6</number>
+           </property>
            <item row="15" column="0">
-            <widget class="QLabel" name="P_eng">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Двигатель</string>
-             </property>
-            </widget>
-           </item>
-           <item row="16" column="0">
-            <widget class="QLabel" name="P_eng_type">
-             <property name="font">
-              <font>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Тип</string>
-             </property>
-            </widget>
-           </item>
-           <item row="13" column="0">
             <layout class="QGridLayout" name="gridLayout_flight">
              <item row="5" column="4">
               <widget class="QLabel" name="P_fl_lb_rang_km">
@@ -533,7 +545,55 @@
              </item>
             </layout>
            </item>
-           <item row="11" column="0">
+           <item row="17" column="0">
+            <widget class="QLabel" name="P_eng">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Двигатель</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0">
+            <widget class="QLabel" name="label_43">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Нагрузка</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
+            <widget class="QLabel" name="P_flight">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Полёт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="18" column="0">
+            <widget class="QLabel" name="P_eng_type">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Тип</string>
+             </property>
+            </widget>
+           </item>
+           <item row="13" column="0">
             <layout class="QGridLayout" name="gridLayout_load">
              <item row="7" column="1">
               <widget class="QLineEdit" name="P_load_line_maxlo_ot">
@@ -706,7 +766,7 @@
              </item>
             </layout>
            </item>
-           <item row="0" column="0">
+           <item row="2" column="0">
             <widget class="QLabel" name="P_naz">
              <property name="font">
               <font>
@@ -718,7 +778,84 @@
              </property>
             </widget>
            </item>
-           <item row="9" column="0">
+           <item row="3" column="0">
+            <layout class="QGridLayout" name="gridLayout_naz">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="P_pere">
+               <property name="text">
+                <string>Перехватчик</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="P_istreb">
+               <property name="text">
+                <string>Истребитель</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="P_evak">
+               <property name="text">
+                <string>Эвакуация</string>
+               </property>
+               <property name="tristate">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="P_bomb">
+               <property name="text">
+                <string>Бомбардировщик</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="P_gruz">
+               <property name="text">
+                <string>Грузовой</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="P_shturm">
+               <property name="text">
+                <string>Штурмовик</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="P_trans">
+               <property name="text">
+                <string>Транспортный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="P_razv">
+               <property name="text">
+                <string>Разведка</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="P_pas">
+               <property name="text">
+                <string>Пассажирский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QCheckBox" name="P_strat">
+               <property name="text">
+                <string>Стратегический</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="11" column="0">
             <layout class="QGridLayout" name="gridLayout_size">
              <item row="1" column="0">
               <widget class="QLabel" name="label_7">
@@ -932,86 +1069,63 @@
              </item>
             </layout>
            </item>
-           <item row="1" column="0">
-            <layout class="QGridLayout" name="gridLayout_naz">
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="P_naz_cb_milit">
-               <property name="text">
-                <string>Военный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="P_naz_cb_tren">
-               <property name="text">
-                <string>Учебный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
-              <widget class="QCheckBox" name="P_naz_cb_cargo">
-               <property name="text">
-                <string>Грузовой</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QCheckBox" name="P_naz_cb_agro">
-               <property name="text">
-                <string>Сельхоз</string>
-               </property>
-              </widget>
-             </item>
+           <item row="6" column="0">
+            <widget class="QLabel" name="P_year">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Год выпуска</string>
+             </property>
+            </widget>
+           </item>
+           <item row="19" column="0">
+            <layout class="QGridLayout" name="gridLayout">
              <item row="0" column="0">
-              <widget class="QCheckBox" name="P_naz_cb_sporty">
+              <widget class="QCheckBox" name="P_eng_type_cb_TRDD">
                <property name="text">
-                <string>Спортивный</string>
+                <string>ТРДД</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="0">
-              <widget class="QCheckBox" name="P_naz_cb_bomb">
+             <item row="0" column="2">
+              <widget class="QCheckBox" name="P_eng_type_cb_PD">
                <property name="text">
-                <string>Бомбардировщик</string>
+                <string>ПД</string>
                </property>
               </widget>
              </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="P_naz_cb_civil">
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="P_eng_type_cb_TVD">
                <property name="text">
-                <string>Гражданский</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="P_naz_cb_istreb">
-               <property name="text">
-                <string>Истребитель</string>
+                <string>ТВД</string>
                </property>
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="QCheckBox" name="P_naz_cb_perehv">
+              <widget class="QCheckBox" name="P_eng_type_cb_GTD">
                <property name="text">
-                <string>Перехватчик</string>
+                <string>ГТД</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="1">
-              <widget class="QCheckBox" name="P_naz_cb_shturm">
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="P_eng_type_cb_TRD">
                <property name="text">
-                <string>Штурмовик</string>
+                <string>ТРД</string>
                </property>
               </widget>
              </item>
             </layout>
            </item>
-           <item row="3" column="0">
+           <item row="5" column="0">
             <layout class="QFormLayout" name="formLayout_country">
              <item row="0" column="0">
               <widget class="QCheckBox" name="P_coun_cb_Rus">
                <property name="text">
-                <string>Россиия</string>
+                <string>Россия</string>
                </property>
               </widget>
              </item>
@@ -1066,7 +1180,7 @@
              </item>
             </layout>
            </item>
-           <item row="5" column="0">
+           <item row="7" column="0">
             <layout class="QFormLayout" name="formLayout_year">
              <item row="0" column="0">
               <widget class="QLabel" name="P_year_lb_ot">
@@ -1098,7 +1212,43 @@
              </item>
             </layout>
            </item>
-           <item row="7" column="0">
+           <item row="8" column="0">
+            <widget class="QLabel" name="P_weight">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Вес</string>
+             </property>
+            </widget>
+           </item>
+           <item row="10" column="0">
+            <widget class="QLabel" name="P_size">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Размер</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="P_county">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Страна</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
             <layout class="QGridLayout" name="gridLayout_weight">
              <item row="1" column="0">
               <widget class="QLabel" name="label">
@@ -1118,34 +1268,6 @@
               <widget class="QLineEdit" name="P_wei_line_sob_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="label_3">
-               <property name="text">
-                <string>от</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_norm">
-               <property name="text">
-                <string>Нормальный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QLineEdit" name="P_wei_line_norm_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="label_5">
-               <property name="text">
-                <string>от</string>
                </property>
               </widget>
              </item>
@@ -1170,139 +1292,166 @@
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLineEdit" name="P_wei_line_max_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_3">
+               <property name="text">
+                <string>от</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="2">
+             <item row="3" column="2">
               <widget class="QLabel" name="label_4">
                <property name="text">
                 <string>до</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="4">
-              <widget class="QLabel" name="P_wei_lb_sob_kg_4">
-               <property name="text">
-                <string>кг</string>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="P_wei_line_norm_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="3">
+             <item row="3" column="3">
               <widget class="QLineEdit" name="P_wei_line_norm_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_max">
+             <item row="3" column="4">
+              <widget class="QLabel" name="P_wei_lb_sob_kg_4">
                <property name="text">
-                <string>Максимальный</string>
+                <string>кг</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="2">
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_5">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="P_wei_line_max_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
               <widget class="QLabel" name="label_6">
                <property name="text">
                 <string>до</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="4">
-              <widget class="QLabel" name="P_wei_lb_max_kg">
-               <property name="text">
-                <string>кг</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="3">
+             <item row="5" column="3">
               <widget class="QLineEdit" name="P_wei_line_max_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-            </layout>
-           </item>
-           <item row="6" column="0">
-            <widget class="QLabel" name="P_weight">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Вес</string>
-             </property>
-            </widget>
-           </item>
-           <item row="8" column="0">
-            <widget class="QLabel" name="P_size">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Размер</string>
-             </property>
-            </widget>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="P_county">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Страна</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="0">
-            <widget class="QLabel" name="P_year">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Год выпуска</string>
-             </property>
-            </widget>
-           </item>
-           <item row="17" column="0">
-            <layout class="QGridLayout" name="gridLayout">
-             <item row="0" column="2">
-              <widget class="QCheckBox" name="P_eng_type_cb_PD">
+             <item row="5" column="4">
+              <widget class="QLabel" name="P_wei_lb_max_kg">
                <property name="text">
-                <string>ПД</string>
+                <string>кг</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="P_eng_type_cb_TRDD">
+             <item row="4" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_max">
                <property name="text">
-                <string>ТРДД</string>
+                <string>Максимальный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_norm">
+               <property name="text">
+                <string>Нормальный</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="P_naz_2">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Область применения</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_naz_2">
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="P_med">
+               <property name="text">
+                <string>Медицинский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="P_pro">
+               <property name="text">
+                <string>Проект</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="P_lab">
+               <property name="text">
+                <string>Лабаратория</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="P_ycheb">
+               <property name="text">
+                <string>Учебный</string>
                </property>
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QCheckBox" name="P_eng_type_cb_TVD">
+              <widget class="QCheckBox" name="P_milit">
                <property name="text">
-                <string>ТВД</string>
+                <string>Военный</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="3">
-              <widget class="QCheckBox" name="P_eng_type_cb_TRD">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="P_sport">
                <property name="text">
-                <string>ТРД</string>
+                <string>Спортивный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="P_agro">
+               <property name="text">
+                <string>Сельхоз</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="P_gra">
+               <property name="text">
+                <string>Гражданский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="P_paj">
+               <property name="text">
+                <string>Пожарный</string>
                </property>
               </widget>
              </item>
@@ -1569,8 +1718,26 @@
        <string notr="true">background-color: rgb(166, 166, 166);</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_21">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <property name="spacing">
+        <number>5</number>
+       </property>
        <item row="0" column="0">
         <widget class="QScrollArea" name="scrollArea_5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="widgetResizable">
           <bool>true</bool>
          </property>
@@ -1578,87 +1745,67 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>0</y>
-            <width>256</width>
-            <height>1467</height>
+            <y>-862</y>
+            <width>258</width>
+            <height>1561</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_22">
-           <item row="1" column="0">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item row="3" column="0">
             <layout class="QGridLayout" name="gridLayout_naz_H">
              <item row="0" column="1">
-              <widget class="QCheckBox" name="H_naz_cb_milit">
-               <property name="text">
-                <string>Военный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="H_naz_cb_tren">
+              <widget class="QCheckBox" name="H_ycheb_2">
                <property name="text">
                 <string>Учебный</string>
                </property>
               </widget>
              </item>
-             <item row="3" column="1">
-              <widget class="QCheckBox" name="H_na_cb_cargo">
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="H_gruz">
                <property name="text">
                 <string>Грузовой</string>
                </property>
               </widget>
              </item>
-             <item row="1" column="1">
-              <widget class="QCheckBox" name="H_naz_cb_agro">
-               <property name="text">
-                <string>Сельхоз</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="H_naz_cb_sporty">
-               <property name="text">
-                <string>Спортивный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QCheckBox" name="H_naz_cb_bomb">
-               <property name="text">
-                <string>Бомбардировщик</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="H_naz_cb_civil">
-               <property name="text">
-                <string>Гражданский</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="H_naz_cb_istreb">
-               <property name="text">
-                <string>Истребитель</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QCheckBox" name="H_naz_cb_perehv">
-               <property name="text">
-                <string>Перехватчик</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QCheckBox" name="H_naz_cb_shturm">
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="H_shturm">
                <property name="text">
                 <string>Штурмовик</string>
                </property>
               </widget>
              </item>
+             <item row="0" column="2">
+              <widget class="QCheckBox" name="H_ydar">
+               <property name="text">
+                <string>Ударный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QCheckBox" name="H_paj_2">
+               <property name="text">
+                <string>Пожарный</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </item>
-           <item row="13" column="0">
+           <item row="15" column="0">
             <layout class="QGridLayout" name="gridLayout_load_2">
              <item row="7" column="1">
               <widget class="QLineEdit" name="H_load_line_maxlo_ot">
@@ -1831,12 +1978,12 @@
              </item>
             </layout>
            </item>
-           <item row="3" column="0">
+           <item row="5" column="0">
             <layout class="QFormLayout" name="formLayout_country_H">
              <item row="0" column="0">
               <widget class="QCheckBox" name="H_coun_cb_Rus">
                <property name="text">
-                <string>Россиия</string>
+                <string>Россия</string>
                </property>
               </widget>
              </item>
@@ -1891,7 +2038,19 @@
              </item>
             </layout>
            </item>
-           <item row="18" column="0">
+           <item row="8" column="0">
+            <widget class="QLabel" name="H_weight">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Вес</string>
+             </property>
+            </widget>
+           </item>
+           <item row="20" column="0">
             <layout class="QGridLayout" name="gridLayout_flight_2">
              <item row="9" column="1">
               <widget class="QLineEdit" name="H_fl_line_prhi_ot">
@@ -2105,7 +2264,19 @@
              </item>
             </layout>
            </item>
-           <item row="7" column="0">
+           <item row="21" column="0">
+            <widget class="QLabel" name="H_eng">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Двигатель</string>
+             </property>
+            </widget>
+           </item>
+           <item row="9" column="0">
             <layout class="QGridLayout" name="gridLayout_weight_2">
              <item row="1" column="0">
               <widget class="QLabel" name="label_45">
@@ -2125,34 +2296,6 @@
               <widget class="QLineEdit" name="H_wei_line_sob_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="label_46">
-               <property name="text">
-                <string>от</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_norm_2">
-               <property name="text">
-                <string>Нормальный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QLineEdit" name="H_wei_line_norm_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="label_47">
-               <property name="text">
-                <string>от</string>
                </property>
               </widget>
              </item>
@@ -2177,77 +2320,93 @@
                </property>
               </widget>
              </item>
-             <item row="8" column="1">
-              <widget class="QLineEdit" name="H_wei_line_max_ot">
+             <item row="2" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_norm_2">
+               <property name="text">
+                <string>Нормальный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="H_wei_line_norm_ot">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="2">
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_46">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
               <widget class="QLabel" name="label_49">
                <property name="text">
                 <string>до</string>
                </property>
               </widget>
              </item>
-             <item row="4" column="4">
-              <widget class="QLabel" name="P_wei_lb_sob_kg_5">
-               <property name="text">
-                <string>кг</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="3">
+             <item row="3" column="3">
               <widget class="QLineEdit" name="H_wei_line_norm_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
-             <item row="6" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_max_2">
+             <item row="3" column="4">
+              <widget class="QLabel" name="P_wei_lb_sob_kg_5">
                <property name="text">
-                <string>Максимальный</string>
+                <string>кг</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="2">
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_47">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="H_wei_line_max_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
               <widget class="QLabel" name="label_50">
                <property name="text">
                 <string>до</string>
                </property>
               </widget>
              </item>
-             <item row="8" column="4">
-              <widget class="QLabel" name="P_wei_lb_max_kg_2">
-               <property name="text">
-                <string>кг</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="3">
+             <item row="5" column="3">
               <widget class="QLineEdit" name="H_wei_line_max_do">
                <property name="styleSheet">
                 <string notr="true">background-color: rgb(255, 255, 255);</string>
                </property>
               </widget>
              </item>
+             <item row="5" column="4">
+              <widget class="QLabel" name="P_wei_lb_max_kg_2">
+               <property name="text">
+                <string>кг</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_max_2">
+               <property name="text">
+                <string>Максимальный</string>
+               </property>
+              </widget>
+             </item>
             </layout>
            </item>
-           <item row="19" column="0">
-            <widget class="QLabel" name="H_eng">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Двигатель</string>
-             </property>
-            </widget>
-           </item>
-           <item row="5" column="0">
+           <item row="7" column="0">
             <layout class="QFormLayout" name="formLayout_year_H">
              <item row="0" column="0">
               <widget class="QLabel" name="H_year_lb_ot">
@@ -2279,19 +2438,7 @@
              </item>
             </layout>
            </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="H_naz">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Назначение</string>
-             </property>
-            </widget>
-           </item>
-           <item row="4" column="0">
+           <item row="6" column="0">
             <widget class="QLabel" name="H_year">
              <property name="font">
               <font>
@@ -2304,6 +2451,18 @@
             </widget>
            </item>
            <item row="2" column="0">
+            <widget class="QLabel" name="H_naz">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Назначение</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="0">
             <widget class="QLabel" name="H_country">
              <property name="font">
               <font>
@@ -2315,19 +2474,7 @@
              </property>
             </widget>
            </item>
-           <item row="20" column="0">
-            <widget class="QLabel" name="H_eng_type">
-             <property name="font">
-              <font>
-               <pointsize>10</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Тип</string>
-             </property>
-            </widget>
-           </item>
-           <item row="15" column="0">
+           <item row="17" column="0">
             <widget class="QLabel" name="H_flight">
              <property name="font">
               <font>
@@ -2339,7 +2486,19 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="0">
+           <item row="22" column="0">
+            <widget class="QLabel" name="H_eng_type">
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Тип</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
             <widget class="QLabel" name="H_load">
              <property name="font">
               <font>
@@ -2351,7 +2510,7 @@
              </property>
             </widget>
            </item>
-           <item row="9" column="0">
+           <item row="11" column="0">
             <widget class="QLabel" name="H_size">
              <property name="font">
               <font>
@@ -2363,19 +2522,7 @@
              </property>
             </widget>
            </item>
-           <item row="6" column="0">
-            <widget class="QLabel" name="H_weight">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Вес</string>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="0">
+           <item row="12" column="0">
             <layout class="QGridLayout" name="gridLayout_size_2">
              <item row="6" column="0" colspan="5">
               <widget class="QLabel" name="P_size_lb_plosh_2">
@@ -2547,19 +2694,12 @@
              </item>
             </layout>
            </item>
-           <item row="21" column="0">
+           <item row="23" column="0">
             <layout class="QGridLayout" name="gridLayout_23">
              <item row="0" column="1">
               <widget class="QCheckBox" name="H_eng_type_cb_TVD">
                <property name="text">
                 <string>ТВД</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="2">
-              <widget class="QCheckBox" name="H_eng_type_cb_PD">
-               <property name="text">
-                <string>ПД</string>
                </property>
               </widget>
              </item>
@@ -2570,10 +2710,96 @@
                </property>
               </widget>
              </item>
-             <item row="0" column="3">
+             <item row="0" column="2">
+              <widget class="QCheckBox" name="H_eng_type_cb_PD">
+               <property name="text">
+                <string>ПД</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_GTD_2">
+               <property name="text">
+                <string>ГТД</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
               <widget class="QCheckBox" name="H_eng_type_cb_TRD">
                <property name="text">
                 <string>ТРД</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="P_naz_3">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Область применения</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_naz_3">
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="H_med">
+               <property name="text">
+                <string>Медицинский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="H_pro">
+               <property name="text">
+                <string>Проект</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="H_lab">
+               <property name="text">
+                <string>Лабаратория</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="H_ycheb">
+               <property name="text">
+                <string>Учебный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="H_milit">
+               <property name="text">
+                <string>Военный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="H_sport">
+               <property name="text">
+                <string>Спортивный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="H_gra">
+               <property name="text">
+                <string>Гражданский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="H_paj">
+               <property name="text">
+                <string>Пожарный</string>
                </property>
               </widget>
              </item>
@@ -2840,194 +3066,65 @@
        <string notr="true">background-color: rgb(166, 166, 166);</string>
       </property>
       <layout class="QGridLayout" name="gridLayout_24">
+       <property name="leftMargin">
+        <number>10</number>
+       </property>
+       <property name="topMargin">
+        <number>10</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="bottomMargin">
+        <number>10</number>
+       </property>
+       <property name="spacing">
+        <number>5</number>
+       </property>
        <item row="0" column="0">
         <widget class="QScrollArea" name="scrollArea_6">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="widgetResizable">
           <bool>true</bool>
          </property>
          <widget class="QWidget" name="scrollAreaWidgetContents_6">
           <property name="geometry">
            <rect>
-            <x>-1</x>
-            <y>0</y>
-            <width>263</width>
-            <height>1398</height>
+            <x>0</x>
+            <y>-810</y>
+            <width>258</width>
+            <height>1513</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_25">
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_99">
+           <property name="leftMargin">
+            <number>10</number>
+           </property>
+           <property name="topMargin">
+            <number>10</number>
+           </property>
+           <property name="rightMargin">
+            <number>10</number>
+           </property>
+           <property name="bottomMargin">
+            <number>10</number>
+           </property>
+           <property name="spacing">
+            <number>6</number>
+           </property>
+           <item row="12" column="0">
+            <widget class="QLabel" name="label_173">
              <property name="font">
               <font>
                <pointsize>12</pointsize>
               </font>
              </property>
              <property name="text">
-              <string>Область применения</string>
+              <string>Нагрузка</string>
              </property>
             </widget>
-           </item>
-           <item row="9" column="0">
-            <layout class="QGridLayout" name="gridLayout_weight_3">
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_69">
-               <property name="text">
-                <string>от</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="4">
-              <widget class="QLabel" name="P_wei_lb_sob_kg_6">
-               <property name="text">
-                <string>кг  </string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="3">
-              <widget class="QLineEdit" name="ALL_wei_line_sob_do">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QLabel" name="label_70">
-               <property name="text">
-                <string>от</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_norm_3">
-               <property name="text">
-                <string>Нормальный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QLineEdit" name="ALL_wei_line_norm_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="0">
-              <widget class="QLabel" name="label_71">
-               <property name="text">
-                <string>от</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QLineEdit" name="ALL_wei_line_sob_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_sob_3">
-               <property name="text">
-                <string>Собственный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <widget class="QLabel" name="label_72">
-               <property name="text">
-                <string>до   </string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="1">
-              <widget class="QLineEdit" name="ALL_wei_line_max_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="2">
-              <widget class="QLabel" name="label_73">
-               <property name="text">
-                <string>до</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="4">
-              <widget class="QLabel" name="P_wei_lb_sob_kg_7">
-               <property name="text">
-                <string>кг</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="3">
-              <widget class="QLineEdit" name="ALL_wei_line_norm_do">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="6" column="0" colspan="5">
-              <widget class="QLabel" name="P_wei_lb_max_3">
-               <property name="text">
-                <string>Максимальный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="2">
-              <widget class="QLabel" name="label_74">
-               <property name="text">
-                <string>до</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="4">
-              <widget class="QLabel" name="P_wei_lb_max_kg_3">
-               <property name="text">
-                <string>кг</string>
-               </property>
-              </widget>
-             </item>
-             <item row="8" column="3">
-              <widget class="QLineEdit" name="ALL_wei_line_max_do">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="7" column="0">
-            <layout class="QFormLayout" name="formLayout_5">
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_155">
-               <property name="text">
-                <string>от</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QLineEdit" name="ALL_year_line_ot">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QLabel" name="label_156">
-               <property name="text">
-                <string>до</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QLineEdit" name="ALL_year_line_do">
-               <property name="styleSheet">
-                <string notr="true">background-color: rgb(255, 255, 255);</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
            </item>
            <item row="11" column="0">
             <layout class="QGridLayout" name="gridLayout_size_3">
@@ -3141,59 +3238,319 @@
              </property>
             </widget>
            </item>
-           <item row="12" column="0">
-            <widget class="QLabel" name="label_173">
+           <item row="9" column="0">
+            <layout class="QGridLayout" name="gridLayout_weight_3">
+             <item row="3" column="0">
+              <widget class="QLabel" name="label_70">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_69">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="3">
+              <widget class="QLineEdit" name="ALL_wei_line_sob_do">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="4">
+              <widget class="QLabel" name="P_wei_lb_sob_kg_6">
+               <property name="text">
+                <string>кг  </string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="ALL_wei_line_sob_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QLabel" name="label_72">
+               <property name="text">
+                <string>до   </string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_sob_3">
+               <property name="text">
+                <string>Собственный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="3">
+              <widget class="QLineEdit" name="ALL_wei_line_norm_do">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QLineEdit" name="ALL_wei_line_norm_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="2">
+              <widget class="QLabel" name="label_73">
+               <property name="text">
+                <string>до</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="4">
+              <widget class="QLabel" name="P_wei_lb_sob_kg_7">
+               <property name="text">
+                <string>кг</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QLabel" name="label_71">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="1">
+              <widget class="QLineEdit" name="ALL_wei_line_max_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="2">
+              <widget class="QLabel" name="label_74">
+               <property name="text">
+                <string>до</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="3">
+              <widget class="QLineEdit" name="ALL_wei_line_max_do">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="4">
+              <widget class="QLabel" name="P_wei_lb_max_kg_3">
+               <property name="text">
+                <string>кг</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_norm_3">
+               <property name="text">
+                <string>Нормальный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0" colspan="5">
+              <widget class="QLabel" name="P_wei_lb_max_3">
+               <property name="text">
+                <string>Максимальный</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="7" column="0">
+            <layout class="QFormLayout" name="formLayout_5">
+             <item row="0" column="0">
+              <widget class="QLabel" name="label_155">
+               <property name="text">
+                <string>от</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QLineEdit" name="ALL_year_line_ot">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QLabel" name="label_156">
+               <property name="text">
+                <string>до</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QLineEdit" name="ALL_year_line_do">
+               <property name="styleSheet">
+                <string notr="true">background-color: rgb(255, 255, 255);</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_99">
              <property name="font">
               <font>
                <pointsize>12</pointsize>
               </font>
              </property>
              <property name="text">
-              <string>Нагрузка</string>
+              <string>Область применения</string>
              </property>
             </widget>
            </item>
-           <item row="3" column="0">
-            <layout class="QGridLayout" name="gridLayout_18">
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_naz_6">
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="ALL_med">
+               <property name="text">
+                <string>Медицинский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="ALL_pro">
+               <property name="text">
+                <string>Проект</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="ALL_lab">
+               <property name="text">
+                <string>Лабаратория</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="ALL_ycheb">
+               <property name="text">
+                <string>Учебный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="ALL_milit">
+               <property name="text">
+                <string>Военный</string>
+               </property>
+              </widget>
+             </item>
              <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_87">
+              <widget class="QCheckBox" name="ALL_sport">
                <property name="text">
                 <string>Спортивный</string>
                </property>
               </widget>
              </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_85">
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="ALL_agro">
                <property name="text">
-                <string>Грузовой</string>
+                <string>Сельхоз</string>
                </property>
               </widget>
              </item>
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="checkBox_14">
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="ALL_gra">
+               <property name="text">
+                <string>Гражданский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="ALL_paj">
+               <property name="text">
+                <string>Пожарный</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="3" column="0">
+            <layout class="QGridLayout" name="gridLayout_naz_5">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="ALL_pere">
+               <property name="text">
+                <string>Перехватчик</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="ALL_istreb">
                <property name="text">
                 <string>Истребитель</string>
                </property>
               </widget>
              </item>
-             <item row="1" column="0">
-              <widget class="QCheckBox" name="checkBox_13">
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="ALL_evak">
+               <property name="text">
+                <string>Эвакуация</string>
+               </property>
+               <property name="tristate">
+                <bool>false</bool>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="ALL_bomb">
                <property name="text">
                 <string>Бомбардировщик</string>
                </property>
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QCheckBox" name="checkBox_90">
+              <widget class="QCheckBox" name="ALL_gruz">
+               <property name="text">
+                <string>Грузовой</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="ALL_shturm">
                <property name="text">
                 <string>Штурмовик</string>
                </property>
               </widget>
              </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="checkBox_89">
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="ALL_trans">
                <property name="text">
-                <string>Перехватчик</string>
+                <string>Транспортный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="ALL_razv">
+               <property name="text">
+                <string>Разведка</string>
+               </property>
+              </widget>
+             </item>
+             <item row="4" column="0">
+              <widget class="QCheckBox" name="ALL_pas">
+               <property name="text">
+                <string>Пассажирский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="5" column="0">
+              <widget class="QCheckBox" name="ALL_strat">
+               <property name="text">
+                <string>Стратегический</string>
                </property>
               </widget>
              </item>
@@ -3204,7 +3561,7 @@
              <item row="0" column="0">
               <widget class="QCheckBox" name="ALL_coun_cb_Rus">
                <property name="text">
-                <string>Россиия</string>
+                <string>Россия</string>
                </property>
               </widget>
              </item>
@@ -3628,18 +3985,6 @@
              </property>
             </widget>
            </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_56">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Назначение</string>
-             </property>
-            </widget>
-           </item>
            <item row="16" column="0">
             <widget class="QLabel" name="label_191">
              <property name="font">
@@ -3652,15 +3997,15 @@
              </property>
             </widget>
            </item>
-           <item row="8" column="0">
-            <widget class="QLabel" name="label_153">
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_56">
              <property name="font">
               <font>
                <pointsize>12</pointsize>
               </font>
              </property>
              <property name="text">
-              <string>Вес</string>
+              <string>Назначение</string>
              </property>
             </widget>
            </item>
@@ -3679,19 +4024,24 @@
              </property>
             </widget>
            </item>
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_153">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Вес</string>
+             </property>
+            </widget>
+           </item>
            <item row="18" column="0">
             <layout class="QGridLayout" name="gridLayout_16">
              <item row="0" column="0">
               <widget class="QCheckBox" name="ALL_eng_type_cb_TRDD">
                <property name="text">
                 <string>ТРДД</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="ALL_eng_type_cb_TVD">
-               <property name="text">
-                <string>ТВД</string>
                </property>
               </widget>
              </item>
@@ -3702,76 +4052,24 @@
                </property>
               </widget>
              </item>
-             <item row="0" column="3">
-              <widget class="QCheckBox" name="ALL_eng_type_cb_TRD">
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_TVD">
                <property name="text">
-                <string>ТРД</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="1" column="0">
-            <layout class="QGridLayout" name="gridLayout_19">
-             <property name="sizeConstraint">
-              <enum>QLayout::SetDefaultConstraint</enum>
-             </property>
-             <property name="horizontalSpacing">
-              <number>7</number>
-             </property>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_88">
-               <property name="text">
-                <string>Гражданский</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_86">
-               <property name="text">
-                <string>Сельхоз</string>
+                <string>ТВД</string>
                </property>
               </widget>
              </item>
              <item row="1" column="0">
-              <widget class="QCheckBox" name="checkBox_84">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_GTD">
                <property name="text">
-                <string>Учебный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="checkBox">
-               <property name="text">
-                <string>Научный</string>
+                <string>ГТД</string>
                </property>
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QCheckBox" name="checkBox_83">
+              <widget class="QCheckBox" name="ALL_eng_type_cb_TRD">
                <property name="text">
-                <string>Военный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="checkBox_2">
-               <property name="text">
-                <string>Медицинский</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_3">
-               <property name="text">
-                <string>Разведка</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
-              <widget class="QCheckBox" name="checkBox_4">
-               <property name="text">
-                <string>Эксеремент</string>
+                <string>ТРД</string>
                </property>
               </widget>
              </item>
