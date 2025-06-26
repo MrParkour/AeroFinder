@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -307,7 +307,7 @@
           <property name="geometry">
            <rect>
             <x>0</x>
-            <y>-768</y>
+            <y>0</y>
             <width>258</width>
             <height>1467</height>
            </rect>
@@ -2848,184 +2848,26 @@
          <widget class="QWidget" name="scrollAreaWidgetContents_6">
           <property name="geometry">
            <rect>
-            <x>0</x>
-            <y>-614</y>
-            <width>256</width>
-            <height>1311</height>
+            <x>-1</x>
+            <y>0</y>
+            <width>263</width>
+            <height>1398</height>
            </rect>
           </property>
           <layout class="QGridLayout" name="gridLayout_25">
-           <item row="12" column="0">
-            <widget class="QLabel" name="label_182">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_99">
              <property name="font">
               <font>
                <pointsize>12</pointsize>
               </font>
              </property>
              <property name="text">
-              <string>Полёт</string>
+              <string>Область применения</string>
              </property>
             </widget>
            </item>
-           <item row="8" column="0">
-            <widget class="QLabel" name="label_154">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Размер</string>
-             </property>
-            </widget>
-           </item>
-           <item row="10" column="0">
-            <widget class="QLabel" name="label_173">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Нагрузка</string>
-             </property>
-            </widget>
-           </item>
-           <item row="1" column="0">
-            <layout class="QGridLayout" name="gridLayout_18">
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="checkBox_83">
-               <property name="text">
-                <string>Военный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="checkBox_84">
-               <property name="text">
-                <string>Учебный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
-              <widget class="QCheckBox" name="checkBox_85">
-               <property name="text">
-                <string>Грузовой</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QCheckBox" name="checkBox_86">
-               <property name="text">
-                <string>Сельхоз</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="checkBox_87">
-               <property name="text">
-                <string>Спортивный</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="0">
-              <widget class="QCheckBox" name="checkBox_13">
-               <property name="text">
-                <string>Бомбардировщик</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="checkBox_88">
-               <property name="text">
-                <string>Гражданский</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="checkBox_14">
-               <property name="text">
-                <string>Истребитель</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QCheckBox" name="checkBox_89">
-               <property name="text">
-                <string>Перехватчик</string>
-               </property>
-              </widget>
-             </item>
-             <item row="4" column="1">
-              <widget class="QCheckBox" name="checkBox_90">
-               <property name="text">
-                <string>Штурмовик</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="3" column="0">
-            <layout class="QFormLayout" name="formLayout_10">
-             <item row="0" column="0">
-              <widget class="QCheckBox" name="ALL_coun_cb_Rus">
-               <property name="text">
-                <string>Россиия</string>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QCheckBox" name="ALL_coun_cb_USSR">
-               <property name="text">
-                <string>СССР</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="0">
-              <widget class="QCheckBox" name="ALL_coun_cb_Amer">
-               <property name="text">
-                <string>Америка</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QCheckBox" name="ALL_coun_cb_Chinazes">
-               <property name="text">
-                <string>Китай</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="0">
-              <widget class="QCheckBox" name="ALL_coun_cb_GBrit">
-               <property name="text">
-                <string>Великобритания</string>
-               </property>
-              </widget>
-             </item>
-             <item row="2" column="1">
-              <widget class="QCheckBox" name="ALL_coun_cb_Itali">
-               <property name="text">
-                <string>Италия</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="0">
-              <widget class="QCheckBox" name="ALL_coun_cb_Fran">
-               <property name="text">
-                <string>Франция</string>
-               </property>
-              </widget>
-             </item>
-             <item row="3" column="1">
-              <widget class="QCheckBox" name="ALL_coun_cb_Spain">
-               <property name="text">
-                <string>Испания</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="7" column="0">
+           <item row="9" column="0">
             <layout class="QGridLayout" name="gridLayout_weight_3">
              <item row="1" column="0">
               <widget class="QLabel" name="label_69">
@@ -3155,7 +2997,7 @@
              </item>
             </layout>
            </item>
-           <item row="5" column="0">
+           <item row="7" column="0">
             <layout class="QFormLayout" name="formLayout_5">
              <item row="0" column="0">
               <widget class="QLabel" name="label_155">
@@ -3187,7 +3029,7 @@
              </item>
             </layout>
            </item>
-           <item row="9" column="0">
+           <item row="11" column="0">
             <layout class="QGridLayout" name="gridLayout_size_3">
              <item row="0" column="0" colspan="5">
               <widget class="QLabel" name="P_size_lb_long_3">
@@ -3275,7 +3117,149 @@
              </item>
             </layout>
            </item>
-           <item row="11" column="0">
+           <item row="10" column="0">
+            <widget class="QLabel" name="label_154">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Размер</string>
+             </property>
+            </widget>
+           </item>
+           <item row="14" column="0">
+            <widget class="QLabel" name="label_182">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Полёт</string>
+             </property>
+            </widget>
+           </item>
+           <item row="12" column="0">
+            <widget class="QLabel" name="label_173">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Нагрузка</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <layout class="QGridLayout" name="gridLayout_18">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_87">
+               <property name="text">
+                <string>Спортивный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="checkBox_85">
+               <property name="text">
+                <string>Грузовой</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="checkBox_14">
+               <property name="text">
+                <string>Истребитель</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="checkBox_13">
+               <property name="text">
+                <string>Бомбардировщик</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="checkBox_90">
+               <property name="text">
+                <string>Штурмовик</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="checkBox_89">
+               <property name="text">
+                <string>Перехватчик</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="5" column="0">
+            <layout class="QFormLayout" name="formLayout_10">
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="ALL_coun_cb_Rus">
+               <property name="text">
+                <string>Россиия</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="ALL_coun_cb_USSR">
+               <property name="text">
+                <string>СССР</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="ALL_coun_cb_Amer">
+               <property name="text">
+                <string>Америка</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="ALL_coun_cb_Chinazes">
+               <property name="text">
+                <string>Китай</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="ALL_coun_cb_GBrit">
+               <property name="text">
+                <string>Великобритания</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="ALL_coun_cb_Itali">
+               <property name="text">
+                <string>Италия</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="ALL_coun_cb_Fran">
+               <property name="text">
+                <string>Франция</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="ALL_coun_cb_Spain">
+               <property name="text">
+                <string>Испания</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="13" column="0">
             <layout class="QGridLayout" name="gridLayout_load_3">
              <item row="7" column="1">
               <widget class="QLineEdit" name="ALL_load_line_maxlo_ot">
@@ -3448,7 +3432,7 @@
              </item>
             </layout>
            </item>
-           <item row="13" column="0">
+           <item row="15" column="0">
             <layout class="QGridLayout" name="gridLayout_flight_3">
              <item row="5" column="4">
               <widget class="QLabel" name="P_fl_lb_rang_km_3">
@@ -3620,7 +3604,7 @@
              </item>
             </layout>
            </item>
-           <item row="2" column="0">
+           <item row="4" column="0">
             <widget class="QLabel" name="label_61">
              <property name="font">
               <font>
@@ -3632,7 +3616,7 @@
              </property>
             </widget>
            </item>
-           <item row="4" column="0">
+           <item row="6" column="0">
             <widget class="QLabel" name="label_152">
              <property name="font">
               <font>
@@ -3644,19 +3628,7 @@
              </property>
             </widget>
            </item>
-           <item row="6" column="0">
-            <widget class="QLabel" name="label_153">
-             <property name="font">
-              <font>
-               <pointsize>12</pointsize>
-              </font>
-             </property>
-             <property name="text">
-              <string>Вес</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
+           <item row="2" column="0">
             <widget class="QLabel" name="label_56">
              <property name="font">
               <font>
@@ -3668,7 +3640,7 @@
              </property>
             </widget>
            </item>
-           <item row="14" column="0">
+           <item row="16" column="0">
             <widget class="QLabel" name="label_191">
              <property name="font">
               <font>
@@ -3680,7 +3652,19 @@
              </property>
             </widget>
            </item>
-           <item row="15" column="0">
+           <item row="8" column="0">
+            <widget class="QLabel" name="label_153">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Вес</string>
+             </property>
+            </widget>
+           </item>
+           <item row="17" column="0">
             <widget class="QLabel" name="label_192">
              <property name="font">
               <font>
@@ -3695,7 +3679,7 @@
              </property>
             </widget>
            </item>
-           <item row="16" column="0">
+           <item row="18" column="0">
             <layout class="QGridLayout" name="gridLayout_16">
              <item row="0" column="0">
               <widget class="QCheckBox" name="ALL_eng_type_cb_TRDD">
@@ -3722,6 +3706,72 @@
               <widget class="QCheckBox" name="ALL_eng_type_cb_TRD">
                <property name="text">
                 <string>ТРД</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QGridLayout" name="gridLayout_19">
+             <property name="sizeConstraint">
+              <enum>QLayout::SetDefaultConstraint</enum>
+             </property>
+             <property name="horizontalSpacing">
+              <number>7</number>
+             </property>
+             <item row="2" column="0">
+              <widget class="QCheckBox" name="checkBox_88">
+               <property name="text">
+                <string>Гражданский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="0">
+              <widget class="QCheckBox" name="checkBox_86">
+               <property name="text">
+                <string>Сельхоз</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="0">
+              <widget class="QCheckBox" name="checkBox_84">
+               <property name="text">
+                <string>Учебный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QCheckBox" name="checkBox">
+               <property name="text">
+                <string>Научный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="checkBox_83">
+               <property name="text">
+                <string>Военный</string>
+               </property>
+              </widget>
+             </item>
+             <item row="2" column="1">
+              <widget class="QCheckBox" name="checkBox_2">
+               <property name="text">
+                <string>Медицинский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="0">
+              <widget class="QCheckBox" name="checkBox_3">
+               <property name="text">
+                <string>Разведка</string>
+               </property>
+              </widget>
+             </item>
+             <item row="3" column="1">
+              <widget class="QCheckBox" name="checkBox_4">
+               <property name="text">
+                <string>Эксеремент</string>
                </property>
               </widget>
              </item>
