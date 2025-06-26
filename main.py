@@ -126,6 +126,8 @@ def finding():
             plans_country_check = False
             plane_country_array = []
 
+            # Проверка
+
             # Проверка флажков у стран самолётов
             if ui.P_coun_cb_Rus.isChecked():
                 plans_country_check = True
@@ -700,7 +702,7 @@ def clear():
         ui.ALL_trans.setChecking(False)
 
 
-ui.push_find_all.clicked.connect(finding)
+ui.pushButton_find_all.clicked.connect(finding)
 ui.pushButton_find_p.clicked.connect(finding)
 ui.pushButton_find_h.clicked.connect(finding)
 
