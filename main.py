@@ -6,7 +6,7 @@ connection = sqlite3.connect("database/plane_db.db")
 cursor = connection.cursor()
  
 app = QtWidgets.QApplication([])
-ui = uic.loadUi("ui_designes/ui_design_V_5.ui")
+ui = uic.loadUi("ui_designes/ui_design_V_6.ui")
 
 la = ui.tabWidget.currentIndex()
 
@@ -238,10 +238,12 @@ def finding():
             # checking flight max heigth
             exc += gap_checking(ui.P_fl_line_maxhi_ot, ui.P_fl_line_maxhi_do, "HEIGHT_MAX")
 
+            print(exc)
             cursor.execute(exc)
             output = cursor.fetchall()
 
         elif button == ui.pushButton_find_h:
+            # finding helicopters
             heli_country_check = False
             heli_country_array = []
 
@@ -287,7 +289,6 @@ def finding():
                 heli_engine_array.append("ПД")
 
             # finding helicopters
-
             exc = "SELECT * FROM aircrafts" + "\n"
             exc += """WHERE TYPE = "вертолет"\n"""
             # creating exc for country and engine type
@@ -299,86 +300,87 @@ def finding():
 
             # checking year
             exc += gap_checking(ui.H_year_line_ot, ui.H_year_line_do, "YEAR")
-            
+
             # checking mass empty
-            exc += gap_checking(ui.H_wei_line_sob_ot, ui.H_wei_line_sob_do, "MASS_EMPTY")
+            exc += create_request_str(ui.H_wei_line_sob, "MASS_EMPTY")
 
             # checking mass normal
-            exc += gap_checking(ui.H_wei_line_norm_ot, ui.H_wei_line_norm_do, "MASS_NORMAL")
+            exc += create_request_str(ui.H_wei_line_norm, "MASS_NORMAL")
 
             # checking mass max
-            exc += gap_checking(ui.H_wei_line_max_ot, ui.H_wei_line_max_do, "MASS_MAXIMAL")
+            exc += create_request_str(ui.H_wei_line_max, "MASS_MAXIMAL")
 
             # checking size length
-            exc += gap_checking(ui.H_size_line_long_ot, ui.H_size_line_long_do, "LEN")
+            exc += create_request_str(ui.H_size_line_long, "LEN")
 
             # checking size height
-            exc += gap_checking(ui.H_size_line_high_ot, ui.H_size_line_high_do, "HEIGTH")
+            exc += create_request_str(ui.H_size_line_high, "HEIGTH")
+
             # checking size main rotor
-            exc += gap_checking(ui.H_size_line_diamnes_ot, ui.H_size_line_diamnes_do, "DIAMETR_MAIN_ROTOR")
+            exc += create_request_str(ui.H_size_line_Dnes, "DIAMETR_MAIN_ROTOR")
 
             # checking size tail rotor
-            exc += gap_checking(ui.H_size_line_diamrul_ot, ui.H_size_line_diamrul_do, "DIAMETR_TAIL_ROTOR")
+            exc += create_request_str(ui.H_size_line_Drul, "DIAMETR_TAIL_ROTOR")
 
             # checking crew
-            exc += gap_checking(ui.H_load_line_crew_ot, ui.H_load_line_crew_do, "CREW")
+            exc += create_request_str(ui.H_load_line_crew, "CREW")
 
             # checking armament
-            exc += gap_checking(ui.H_load_line_comlo_ot, ui.H_load_line_comlo_do, "ARMAMENT")
+            exc += create_request_str(ui.H_load_line_comlo, "ARMAMENT")
 
             # checking passengers
-            exc += gap_checking(ui.H_load_line_pascap_ot, ui.H_load_line_pascap_do, "PASSENGERS")
+            exc += create_request_str(ui.H_load_line_pascap, "PASSENGERS")
 
             # checking max load
-            exc += gap_checking(ui.H_load_line_maxlo_ot, ui.H_load_line_maxlo_do, "PAYLOAD")
+            exc += create_request_str(ui.H_load_line_maxlo, "PAYLOAD")
 
             # checking fligth cruise speed
-            exc += gap_checking(ui.H_fl_line_cruis_ot, ui.H_fl_line_cruis_do, "SPEED_NORMAL")
+            exc += create_request_str(ui.H_fl_line_cruis, "SPEED_NORMAL")
 
             # checking fligth max speed
-            exc += gap_checking(ui.H_fl_line_maxsp_ot, ui.H_fl_line_maxsp_do, "SPEED_MAX")
+            exc += create_request_str(ui.H_fl_line_maxsp, "SPEED_MAX")
 
             # checking fligth range
-            exc += gap_checking(ui.H_fl_line_rang_ot, ui.H_fl_line_rang_do, "RANGE")
+            exc += create_request_str(ui.H_fl_line_range, "RANGE")
 
             # checking static ceiling
-            exc += gap_checking(ui.H_fl_line_sthi_ot, ui.H_fl_line_sthi_do, "STATIC_CEILING")
+            exc += create_request_str(ui.H_fl_line_sthi, "STATIC_CEILING")
 
             # checking practice ceiling
-            exc += gap_checking(ui.H_fl_line_prhi_ot, ui.H_fl_line_prhi_do, "SERVICE_CEILING")
+            exc += create_request_str(ui.H_fl_line_sthi, "SERVICE_CEILING")
 
+            print(exc)
             cursor.execute(exc)
             output = cursor.fetchall()
 
         elif button == ui.push_find_all:
             all_country_check = False
             all_country_array = []
-            print(1)
 
             # Проверка флажков на странах всех ла
 
-            if ui.ALL_coun_cb_Rus.isChecked():
+            if ui.checkBox_75.isChecked():
                 all_country_check = True
                 all_country_array.append("Россия")
-            if ui.ALL_coun_cb_USSR.isChecked():
+            if ui.checkBox_76.isChecked():
                 all_country_check = True
                 all_country_array.append("СССР")
-            if ui.ALL_coun_cb_Amer.isChecked():
+            if ui.checkBox_77.isChecked():
                 all_country_check = True
                 all_country_array.append("Америка")
-            if ui.ALL_coun_cb_Chinazes.isChecked():
+            if ui.checkBox_78.isChecked():
                 all_country_check = True
                 all_country_array.append("Китай")
-            if ui.ALL_coun_cb_GBrit.isChecked():
+            if ui.checkBox_79.isChecked():
                 all_country_check = True
                 all_country_array.append("Великобритания")
-            if ui.ALL_coun_cb_Itali.isChecked():
+            if ui.checkBox_80.isChecked():
                 all_country_check = True
                 all_country_array.append("Италия")
-            if ui.ALL_coun_cb_Fran.isChecked():
+            if ui.checkBox_82.isChecked():
                 all_country_check = True
                 all_country_array.append("Франция")
-            if ui.ALL_coun_cb_Spain.isChecked():
+            if ui.checkBox_82.isChecked():
                 all_country_check = True
                 all_country_array.append("Испания")
 
@@ -386,16 +388,16 @@ def finding():
 
             all_engine_check = False
             all_angine_array = []
-            if ui.P_eng_type_cb_TRDD_2.isChecked():
+            if ui.checkBox_91.isChecked():
                 all_engine_check = True
                 all_angine_array.append("ТРДД")
             if ui.checkBox_92.isChecked():
                 all_engine_check = True
                 all_angine_array.append("ТРД")
-            if ui.P_eng_type_cb_TVD_2.isChecked():
+            if ui.checkBox_93.isChecked():
                 all_engine_check = True
                 all_angine_array.append("ТВД")
-            if ui.P_eng_type_cb_PD_2.isChecked():
+            if ui.checkBox_94.isChecked():
                 all_engine_check = True
                 all_angine_array.append("ПД")
             # finding all
@@ -453,6 +455,7 @@ def finding():
             exc += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "STATIC_CEILING")
             exc_1 += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "HEIGHT_MAX")
             print(exc)
+
             cursor.execute(exc)
             output_plane = cursor.fetchall()
             cursor.execute(exc_1)
