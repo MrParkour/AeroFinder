@@ -598,6 +598,27 @@ def clear():
         ui.P_eng_type_cb_PD.setChecking(False)
         ui.P_eng_type_cb_TRD.setChecking(False)
 
+        ui.P_sport.setChecking(False)
+        ui.P_agro.setChecking(False)
+        ui.P_gra.setChecking(False)
+        ui.P_lab.setChecking(False)
+        ui.P_med.setChecking(False)
+        ui.P_milit.setChecking(False)
+        ui.P_paj.setChecking(False)
+        ui.P_pro.setChecking(False)
+        ui.P_ycheb.setChecking(False)
+
+        ui.P_bomb.setChecking(False)
+        ui.P_evak.setChecking(False)
+        ui.P_gruz.setChecking(False)
+        ui.P_istreb.setChecking(False)
+        ui.P_pas.setChecking(False)
+        ui.P_pere.setChecking(False)
+        ui.P_razv.setChecking(False)
+        ui.P_shturm.setChecking(False)
+        ui.P_strat.setChecking(False)
+        ui.P_trans.setChecking(False)
+
     if button == ui.pushButton_clear_heli:
         # очистка всех лайнов в вертолётах
         ui.H_year_line_ot.clear()
@@ -654,6 +675,20 @@ def clear():
         ui.H_eng_type_cb_PD.setChecking(False)
         ui.H_eng_type_cb_TRD.setChecking(False)
 
+        ui.H_gra.setChecking(False)
+        ui.H_lab.setChecking(False)
+        ui.H_med.setChecking(False)
+        ui.H_milit.setChecking(False)
+        ui.H_paj.setChecking(False)
+        ui.H_pro.setChecking(False)
+        ui.H_sport.setChecking(False)
+        ui.H_ycheb.setChecking(False)
+
+        ui.H_shturm.setChecking(False)
+        ui.H_gruz.setChecking(False)
+        ui.H_ydaz.setChecking(False)
+        ui.H_evak.setChecking(False)
+
     if button == ui.pushButton_clear_all:
         # очистка всех лайнов в алл
         ui.ALL_year_line_ot.clear()
@@ -703,6 +738,27 @@ def clear():
         ui.P_eng_type_cb_TVD.setChecking(False)
         ui.P_eng_type_cb_PD.setChecking(False)
         ui.P_eng_type_cb_TRD.setChecking(False)
+
+        ui.ALL_sport.setChecking(False)
+        ui.ALL_agro.setChecking(False)
+        ui.ALL_gra.setChecking(False)
+        ui.ALL_lab.setChecking(False)
+        ui.ALL_med.setChecking(False)
+        ui.ALL_milit.setChecking(False)
+        ui.ALL_paj.setChecking(False)
+        ui.ALL_pro.setChecking(False)
+        ui.ALL_ycheb.setChecking(False)
+
+        ui.ALL_bomb.setChecking(False)
+        ui.ALL_evak.setChecking(False)
+        ui.ALL_gruz.setChecking(False)
+        ui.ALL_istreb.setChecking(False)
+        ui.ALL_pas.setChecking(False)
+        ui.ALL_pere.setChecking(False)
+        ui.ALL_razv.setChecking(False)
+        ui.ALL_shturm.setChecking(False)
+        ui.ALL_strat.setChecking(False)
+        ui.ALL_trans.setChecking(False)
 
 
 ui.push_find_all.clicked.connect(finding)
