@@ -6,7 +6,7 @@ connection = sqlite3.connect("database/plane_db.db")
 cursor = connection.cursor()
  
 app = QtWidgets.QApplication([])
-ui = uic.loadUi("ui_designes/ui_design_V_5.ui")
+ui = uic.loadUi("ui_designes/ui_design_V_6.ui")
 
 la = ui.tabWidget.currentIndex()
 
@@ -412,113 +412,49 @@ def finding():
                 exc += """AND COUNTRY IN ('%s')\n""" % ("""', '""".join(all_country_array))
 
             # checking year
-            exc += gap_checking(ui.lineEdit_31, ui.lineEdit_36, "YEAR")
-
+            print(0)
+            exc += gap_checking(ui.ALL_year_line_ot, ui.ALL_year_line_do, "YEAR")   
+            print(1)
             # checking mass empty
-            mass_empty = checking_input(ui.lineEdit_83.text())
-            if mass_empty != -1:
-                exc += "AND MASS_EMPTY BETWEEN %s AND %s" % (str(mass_empty * 0.95), str(mass_empty * 1.05))
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_wei_line_sob_ot, ui.ALL_wei_line_sob_do, "MASS_EMPTY")
+            print(2)
             # checking mass normal
-            mass_normal = checking_input(ui.lineEdit_85.text())
-            if mass_normal != -1:
-                exc += "AND MASS_NORMAL BETWEEN %s AND %s" % (str(mass_normal * 0.95), str(mass_normal * 1.05))
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_wei_line_norm_ot, ui.ALL_wei_line_norm_do, "MASS_NORMAL")
+            print(3)
             # checking mass max
-            mass_max = checking_input(ui.lineEdit_84.text())
-            if mass_max != -1:
-                exc += "AND MASS_MAXIMAL BETWEEN %s AND %s" % (mass_max * 0.95, mass_max * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_wei_line_max_ot, ui.ALL_wei_line_max_do, "MASS_MAXIMAL")
+            print(4)
             # checking size length
-            length = checking_input(ui.lineEdit_37.text())
-            if length != -1:
-                exc += "AND LEN BETWEEN %s AND %s" % (length * 0.95, length * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_size_line_long_ot, ui.ALL_size_line_long_do, "LEN")
+            print(5)
             # checking size height
-            high = checking_input(ui.lineEdit_38.text())
-            if high != -1:
-                exc += "AND HEIGTH BETWEEN %s AND %s" % (high * 0.95, high * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_size_line_high_ot, ui.ALL_size_line_high_do, "HEIGTH")
+            print(6)
             # checking crew
-            crew = checking_input(ui.lineEdit_87.text())
-            if crew != -1:
-                exc += "AND CREW BETWEEN %s AND %s" % (crew * 0.95, crew * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_load_line_crew_ot, ui.ALL_load_line_crew_do, "CREW")
+            print(7)
             # checking armament
-            armament = checking_input(ui.lineEdit_88.text())
-            if armament != -1:
-                exc += "AND ARMAMENT BETWEEN %s AND %s" % (armament * 0.95, armament * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_load_line_comlo_ot, ui.ALL_load_line_comlo_do, "ARMAMENT")
+            print(8)
             # checking passengers
-            passengers = checking_input(ui.lineEdit_86.text())
-            if passengers != -1:
-                exc += "AND PASSENGERS BETWEEN %s AND %s" % (passengers * 0.95, passengers * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_load_line_pascap_ot, ui.ALL_load_line_pascap_do, "PASSENGERS")
+            print(9)
             # checking max load
-            max_load = checking_input(ui.lineEdit_89.text())
-            if max_load != -1:
-                exc += "AND PAYLOAD BETWEEN %s AND %s" % (max_load * 0.95, max_load * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_load_line_maxlo_ot, ui.ALL_load_line_maxlo_do, "PAYLOAD")
+            print(10)
             # checking fligth cruise speed
-            fl_cruise_speed = checking_input(ui.lineEdit_90.text())
-            if fl_cruise_speed != -1:
-                exc += "AND SPEED_NORMAL BETWEEN %s AND %s" % (fl_cruise_speed * 0.95, fl_cruise_speed * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_fl_line_cruise_ot, ui.ALL_fl_line_cruise_do, "SPEED_NORMAL")
+            print(11)
             # checking fligth max speed
-            fl_max_speed = checking_input(ui.lineEdit_92.text())
-            if fl_max_speed != -1:
-                exc += "AND SPEED_MAX BETWEEN %s AND %s" % (fl_max_speed * 0.95, fl_max_speed * 1.05)
-                exc += '\n'
-            else:
-                pass
-
+            exc += gap_checking(ui.ALL_fl_line_maxsp_ot, ui.ALL_fl_line_maxsp_do, "SPEED_MAX")
+            print(12)
             # checking fligth range
-            fl_range = checking_input(ui.lineEdit_91.text())
-            if fl_range != -1:
-                exc += "AND RANGE BETWEEN %s AND %s" % (fl_range * 0.95, fl_range * 1.05)
-                exc += '\n'
-            else:
-                pass
+            exc += gap_checking(ui.ALL_fl_line_rang_ot, ui.ALL_fl_line_rang_do, "RANGE")
+            print(13)
             exc_1 = exc
-            # checking static ceiling
-            static_ceiling = checking_input(ui.lineEdit_93.text())
-            if static_ceiling != -1:
-                exc += "AND STATIC_CEILING BETWEEN %s AND %s" % (static_ceiling * 0.95, static_ceiling * 1.05)
-                exc += '\n'
-                exc_1 += "AND HEIGHT_MAX BETWEEN %s AND %s" % (static_ceiling * 0.95, static_ceiling * 1.05)
-                exc_1 += '\n'
-            else:
-                pass
+            exc += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "STATIC_CEILING")
+            exc_1 += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "HEIGHT_MAX")
+            print(exc)
 
             cursor.execute(exc)
             output_plane = cursor.fetchall()
@@ -534,8 +470,8 @@ def finding():
             # vivod
             pass
         else:
-            # grusniy smalik
-            pass
+            msg_box = QtWidgets.QMessageBox.information(None, "Ошибка", "К сожаления ни одного летательного аппарата с такими техническими характеристиками не было найдено. Измените критерии поиска и попробуйте еще раз.")
+            msg_box.setIcon(QtWidgets.QMessageBox.warning)
     except Exception:
         pass
 
@@ -767,6 +703,7 @@ def clear():
 ui.push_find_all.clicked.connect(finding)
 ui.pushButton_find_p.clicked.connect(finding)
 ui.pushButton_find_h.clicked.connect(finding)
+
 # функции очистки
 ui.pushButton_clear_plane.clicked.connect(clear)
 ui.pushButton_clear_heli.clicked.connect(clear)
