@@ -699,6 +699,11 @@ def clear():
         ui.P_fl_line_maxhi_ot.clear()
         ui.P_fl_line_maxhi_do.clear()
 
+        ui.P_taga_ot.clear()
+        ui.P_taga_do.clear()
+        ui.P_rashod_ot.clear()
+        ui.P_rashod_do.clear()
+
         # очистка всех чекбоксов в сомолётах
         ui.P_gra.setChecked(False)
         ui.P_med.setChecked(False)
@@ -798,6 +803,11 @@ def clear():
         ui.H_fl_line_sthi_do.clear()
         ui.H_fl_line_prhi_do.clear()
 
+        ui.H_taga_ot.clear()
+        ui.H_taga_do.clear()
+        ui.H_rashod_ot.clear()
+        ui.H_rashod_do.clear()
+
         # очистка всех боксов в вертолётах
         ui.H_gra.setChecked(False)
         ui.H_med.setChecked(False)
@@ -878,6 +888,11 @@ def clear():
         ui.ALL_fl_line_rang_do.clear()
         ui.ALL_fl_line_maxhi_ot.clear()
         ui.ALL_fl_line_maxhi_do.clear()
+
+        ui.ALL_taga_ot.clear()
+        ui.ALL_taga_do.clear()
+        ui.ALL_rash_ot.clear()
+        ui.ALL_rash_do.clear()
 
         # очистка всех чекбоксов в вертолётах
         ui.ALL_gra.setChecked(False)
