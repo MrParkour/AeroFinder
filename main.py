@@ -123,11 +123,74 @@ def finding():
             # finding planes
             exc = "SELECT * FROM aircrafts" + "\n"
             exc += """WHERE TYPE = "Самолёт"\n"""
+
+            plans_obl_check = False
+            plans_obl_array = []
+
+            # Проверка флажков у обл римененния
+            if ui.P_sport.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Спортивный")
+            if ui.P_med.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Медицинский")
+            if ui.P_lab.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Лаборатория")
+            if ui.P_gra.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Гражданский")
+            if ui.P_paj.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Пажарный")
+            if ui.P_milit.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Военный")
+            if ui.P_agro.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Сельскохозяйственный")
+            if ui.P_ycheb.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Учебный")
+            if ui.P_pro.isChecked():
+                plans_obl_check = True
+                plans_obl_array.append("Проект")
+            # Проверка флажков у назначения
+            plane_naz_check = False
+            plane_naz_array = []
+            if ui.P_pere.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Перехватчик")
+            if ui.bomb.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Бомбардировщик")
+            if ui.P_evak.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Эвакуационный")
+            if ui.P_istreb.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Истребитель")
+            if ui.P_trans.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Транспортный")
+            if ui.P_pas.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Пассажирский")
+            if ui.P_strat.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Стратегический")
+            if ui.P_gruz.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Грузовой")
+            if ui.P_shturm.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Штурмовик")
+            if ui.P_razv.isChecked():
+                plane_naz_check = True
+                plane_naz_array.append("Разведка")
+
             plans_country_check = False
             plane_country_array = []
-
-            # Проверка
-
             # Проверка флажков у стран самолётов
             if ui.P_coun_cb_Rus.isChecked():
                 plans_country_check = True
@@ -246,10 +309,58 @@ def finding():
 
         elif button == ui.pushButton_find_h:
             # finding helicopters
-            heli_country_check = False
-            heli_country_array = []
+            # Провекрка флажков у обл применения верт
+            heli_obl_check = False
+            heli_obl_array = []
+            if ui.H_sport.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Спортивный")
+            if ui.H_med.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Мудицинский")
+            if ui.H_lab.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Лаборатория")
+            if ui.H_gra.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Гражданский")
+            if ui.H_milit.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Военный")
+            if ui.H_paj.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Пожарный")
+            if ui.H_ycheb.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Учебный")
+            if ui.H_pro.isChecked():
+                heli_obl_check = True
+                heli_obl_array.append("Проект")
+
+            # Проверка флажков у назначения верт
+            heli_naz_check = False
+            heli_naz_array = []
+            if ui.H_shtyurm.isChecked():
+                heli_naz_check = True
+                heli_naz_array.append("Штурмовик")
+            if ui.H_gruz.isChecked():
+                heli_naz_check = True
+                heli_naz_array.append("Грузовой")
+            if ui.H_pas.isChecked():
+                heli_naz_check = True
+                heli_naz_array.append("Пассажирский")
+            if ui.H_ydar.isChecked():
+                heli_naz_check = True
+                heli_naz_array.append("Ударный")
+            if ui.H_evak.isChecked():
+                heli_naz_check = True
+                heli_naz_array.append("Эвакуационный")
+
+
 
             # Проверка флажков у стран вертолётов
+            heli_country_check = False
+            heli_country_array = []
             if ui.H_co_cb_Rus.isChecked():
                 heli_country_check = True
                 heli_country_array.append("Россия")
@@ -356,11 +467,78 @@ def finding():
             output = cursor.fetchall()
 
         elif button == ui.push_find_all:
-            all_country_check = False
-            all_country_array = []
+
+            # Проверка флажков у обл римененния
+            all_obl_check = False
+            all_obl_array = []
+            if ui.ALL_sport.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Спортивный")
+            if ui.ALL_med.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Медицинский")
+            if ui.ALL_lab.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Лаборатория")
+            if ui.ALL_gra.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Гражданский")
+            if ui.ALL_paj.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Пажарный")
+            if ui.ALL_milit.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Военный")
+            if ui.ALL_agro.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Сельскохозяйственный")
+            if ui.ALL_ycheb.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Учебный")
+            if ui.ALL_pro.isChecked():
+                all_obl_check = True
+                all_obl_array.append("Проект")
+
+            # Проверка флажков у назначения
+            all_naz_check = False
+            all_naz_array = []
+            if ui.ALL_pere.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Перехватчик")
+            if ui.ALL_bomb.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Бомбардировщик")
+            if ui.ALL_evak.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Эвакуационный")
+            if ui.ALL_istreb.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Истребитель")
+            if ui.ALL_trans.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Транспортный")
+            if ui.ALL_pas.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Пассажирский")
+            if ui.ALL_strat.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Стратегический")
+            if ui.ALL_gruz.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Грузовой")
+            if ui.ALL_shturm.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Штурмовик")
+            if ui.ALL_razv.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Разведка")
+            if ui.ALL_ydar.isChecked():
+                all_naz_check = True
+                all_naz_array.append("Ударный")
 
             # Проверка флажков на странах всех ла
-
+            all_country_check = False
+            all_country_array = []
             if ui.checkBox_75.isChecked():
                 all_country_check = True
                 all_country_array.append("Россия")
