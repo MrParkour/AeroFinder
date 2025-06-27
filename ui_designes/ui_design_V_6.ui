@@ -27,7 +27,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_plane">
      <attribute name="title">
@@ -1463,6 +1463,19 @@
        </item>
       </layout>
      </widget>
+     <widget class="QPushButton" name="pushButton_clear_plane">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>730</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_heli">
      <attribute name="title">
@@ -1746,7 +1759,7 @@
            <rect>
             <x>0</x>
             <y>0</y>
-            <width>259</width>
+            <width>258</width>
             <height>1561</height>
            </rect>
           </property>
@@ -1775,20 +1788,6 @@
                </property>
               </widget>
              </item>
-             <item row="1" column="1">
-              <widget class="QCheckBox" name="H_gruz">
-               <property name="text">
-                <string>Грузовой</string>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="2">
-              <widget class="QCheckBox" name="H_paj_2">
-               <property name="text">
-                <string>Эвакувционный</string>
-               </property>
-              </widget>
-             </item>
              <item row="0" column="1">
               <widget class="QCheckBox" name="H_shturm">
                <property name="text">
@@ -1796,10 +1795,24 @@
                </property>
               </widget>
              </item>
+             <item row="1" column="1">
+              <widget class="QCheckBox" name="H_paj_2">
+               <property name="text">
+                <string>Эвакувционный</string>
+               </property>
+              </widget>
+             </item>
              <item row="2" column="1">
               <widget class="QCheckBox" name="H_pas">
                <property name="text">
                 <string>Пассажирский</string>
+               </property>
+              </widget>
+             </item>
+             <item row="1" column="2">
+              <widget class="QCheckBox" name="H_gruz">
+               <property name="text">
+                <string>Грузовой</string>
                </property>
               </widget>
              </item>
@@ -2810,6 +2823,19 @@
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_clear_heli">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>730</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_All">
@@ -4087,6 +4113,19 @@
         </widget>
        </item>
       </layout>
+     </widget>
+     <widget class="QPushButton" name="pushButton_clear_all">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>730</y>
+        <width>93</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Очистить</string>
+      </property>
      </widget>
     </widget>
    </widget>
