@@ -1,2 +1,7 @@
-.idea1/
+.idea/
 test.py
+database/db_excel.xlsx
+database/db_excel_2.xlsx
+database/plane_db_test.db
+database/plane_db copy.db
+ui_designes/ui_design_V_5.ui
