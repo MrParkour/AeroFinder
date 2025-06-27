@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, uic
 import sys
 import sqlite3
 
-connection = sqlite3.connect("database/plane_db.db")
+connection = sqlite3.connect("database/plane_db copy.db")
 cursor = connection.cursor()
  
 app = QtWidgets.QApplication([])
@@ -121,8 +121,8 @@ def finding():
         output = []
         if button == ui.pushButton_find_p:
             # finding planes
-            exc = "SELECT * FROM aircrafts" + "\n"
-            exc += """WHERE TYPE = "Самолёт"\n"""
+            exc = "SELECT * FROM aircrafts_2" + "\n"
+            exc += """WHERE TYPE = "Самолет"\n"""
             plans_country_check = False
             plane_country_array = []
 
@@ -142,7 +142,7 @@ def finding():
             if ui.P_coun_cb_GBrit.isChecked():
                 plans_country_check = True
                 plane_country_array.append("Великобритания")
-            if ui.P_coun_cb_Iatli.isChecked():
+            if ui.P_coun_cb_Itali.isChecked():
                 plans_country_check = True
                 plane_country_array.append("Италия")
             if ui.P_coun_cb_Fran.isChecked():
@@ -206,7 +206,7 @@ def finding():
             exc += gap_checking(ui.P_size_line_high_ot, ui.P_size_line_high_do, "HEIGTH")
 
             # checking wing span
-            exc += gap_checking(ui.P_size_line_razmax_ot, ui.P_size_line_rasmax_do, "WING_SPAN")
+            exc += gap_checking(ui.P_size_line_razmax_ot, ui.P_size_line_razmax_do, "WING_SPAN")
 
             # checking wing area
             exc += gap_checking(ui.P_size_line_plosh_ot, ui.P_size_line_plosh_do, "WING_AREA")
@@ -224,7 +224,7 @@ def finding():
             exc += gap_checking(ui.P_load_line_pascap_ot, ui.P_load_line_pascap_do, "PASSENGERS")
 
             # checking payload
-            exc += gap_checking(ui.P_load_line_maxlo_ot, ui.lineEdit_12, "PAYLOAD")
+            exc += gap_checking(ui.P_load_line_maxlo_ot, ui.P_load_line_maxlo_do, "PAYLOAD")
 
             # checking flight cruise speed
             exc += gap_checking(ui.P_fl_line_cruis_ot, ui.P_fl_line_cruis_do, "SPEED_NORMAL")
@@ -289,8 +289,8 @@ def finding():
                 heli_engine_array.append("ПД")
 
             # finding helicopters
-            exc = "SELECT * FROM aircrafts" + "\n"
-            exc += """WHERE TYPE = "вертолет"\n"""
+            exc = "SELECT * FROM aircrafts_2" + "\n"
+            exc += """WHERE TYPE = "Вертолет"\n"""
             # creating exc for country and engine type
 
             if heli_engine_check:
@@ -402,8 +402,8 @@ def finding():
                 all_angine_array.append("ПД")
             # finding all
 
-            exc = "SELECT * FROM aircrafts" + "\n"
-            exc += """WHERE TYPE in ("вертолет", "самолет")\n"""
+            exc = "SELECT * FROM aircrafts_2" + "\n"
+            exc += """WHERE TYPE in ("Вертолет", "Самолет")\n"""
 
             # exc for engine type and country
             if all_engine_check:
@@ -412,45 +412,44 @@ def finding():
                 exc += """AND COUNTRY IN ('%s')\n""" % ("""', '""".join(all_country_array))
 
             # checking year
-            print(0)
             exc += gap_checking(ui.ALL_year_line_ot, ui.ALL_year_line_do, "YEAR")   
-            print(1)
+
             # checking mass empty
             exc += gap_checking(ui.ALL_wei_line_sob_ot, ui.ALL_wei_line_sob_do, "MASS_EMPTY")
-            print(2)
+
             # checking mass normal
             exc += gap_checking(ui.ALL_wei_line_norm_ot, ui.ALL_wei_line_norm_do, "MASS_NORMAL")
-            print(3)
+
             # checking mass max
             exc += gap_checking(ui.ALL_wei_line_max_ot, ui.ALL_wei_line_max_do, "MASS_MAXIMAL")
-            print(4)
+
             # checking size length
             exc += gap_checking(ui.ALL_size_line_long_ot, ui.ALL_size_line_long_do, "LEN")
-            print(5)
+
             # checking size height
             exc += gap_checking(ui.ALL_size_line_high_ot, ui.ALL_size_line_high_do, "HEIGTH")
-            print(6)
+
             # checking crew
             exc += gap_checking(ui.ALL_load_line_crew_ot, ui.ALL_load_line_crew_do, "CREW")
-            print(7)
+
             # checking armament
             exc += gap_checking(ui.ALL_load_line_comlo_ot, ui.ALL_load_line_comlo_do, "ARMAMENT")
-            print(8)
+
             # checking passengers
             exc += gap_checking(ui.ALL_load_line_pascap_ot, ui.ALL_load_line_pascap_do, "PASSENGERS")
-            print(9)
+
             # checking max load
             exc += gap_checking(ui.ALL_load_line_maxlo_ot, ui.ALL_load_line_maxlo_do, "PAYLOAD")
-            print(10)
+
             # checking fligth cruise speed
             exc += gap_checking(ui.ALL_fl_line_cruise_ot, ui.ALL_fl_line_cruise_do, "SPEED_NORMAL")
-            print(11)
+
             # checking fligth max speed
             exc += gap_checking(ui.ALL_fl_line_maxsp_ot, ui.ALL_fl_line_maxsp_do, "SPEED_MAX")
-            print(12)
+
             # checking fligth range
             exc += gap_checking(ui.ALL_fl_line_rang_ot, ui.ALL_fl_line_rang_do, "RANGE")
-            print(13)
+
             exc_1 = exc
             exc += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "STATIC_CEILING")
             exc_1 += gap_checking(ui.ALL_fl_line_maxhi_ot, ui.ALL_fl_line_maxhi_do, "HEIGHT_MAX")
@@ -466,14 +465,22 @@ def finding():
         # записать итог в строку вида "спортивный, перехватчик, истребитель"
         # добавить переменную bool которая показывается есть ли чтото или нет
 
+        print(output)
         if output != []:
-            # vivod
-            pass
+            if button == ui.pushButton_find_p:
+                for aircraft in output:
+                    ui.P_name.setText(aircraft[1])
+            elif button == ui.pushButtob_find_h:
+                pass
+            elif button == ui.push_find_all:
+                pass
         else:
             msg_box = QtWidgets.QMessageBox.information(None, "Ошибка", "К сожаления ни одного летательного аппарата с такими техническими характеристиками не было найдено. Измените критерии поиска и попробуйте еще раз.")
-            msg_box.setIcon(QtWidgets.QMessageBox.warning)
     except Exception:
+        print("type error")
         pass
+    # except Exception:
+    #     print('Error')
 
 def clear():
     # прверить на какой стр нажата кнопка, затем очистить все лайны и боксы на этой стр
